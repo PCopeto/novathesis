@@ -11,451 +11,106 @@
 \chapter{Introduction}
 \label{cha:introduction}
 
-\prependtographicspath{{Chapters/Figures/Covers/}}
-
-% epigraph configuration
-\epigraphfontsize{\small\itshape}
-\setlength\epigraphwidth{12.5cm}
-\setlength\epigraphrule{0pt}
-
-\includegraphics[width=0.1\linewidth]{NOVAthesisFiles/Images/novathesis-insignia}\hfill
-\includegraphics[width=0.875\linewidth]{NOVAthesisFiles/Images/novathesis-text}
-
-\noindent This is the \gls{novathesis} \LaTeX\ template \ntindex[Template!]{Version} \novathesisversion\ from   {Template!date}\novathesisdate.
-
 \epigraph{
-  This work is licensed under the \href{https://www.latex-project.org/lppl/lppl-1-3c/}{\LaTeX\ Project Public License v1.3c}.
-  To view a copy of this \ntindex[Template!]{license}, visit the \href{https://www.latex-project.org/lppl/}{LaTeX project public license}.
-}
+  "The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them."
+}{Sir William Lawrence Bragg}
 
-\section{Welcome to the \novathesis\ Template}
-\label{sec:if_you_use_this_template}
+\section{Introduction}
 
-This first Chapter introduces the \gls{novathesis} template and how it is organized. In Chapter~\ref{cha:users_manual} you can find some specific instructions on how to use this template.  Chapter~\ref{cha:a_short_latex_tutorial_with_examples} shows some examples and give some hints on how to write your text. Please read these next Chapters carefully.
+Since the birth of Nuclear Physics, with the discovery of the atomic nucleus by Ernest Rutherford in 1911 \cite{rutherford_lxxix_1911}, this area has proved to be a fascinating field for scientific research displaying a rich variety of quantum phenomena.
+Many features of the nucleons in the nucleus exhibited are similar to the structure and behavior of atomic electrons in the atom. Similar descriptions for energy levels and shells, spins and angular momentum have emerged.
 
-\subsection{Your Time is Precious}
-\label{sub:time_is_money}
-
-Did you learn how to drive by sitting by the wheel and throwing your car into the road?  Most probably you did take your time \emph{learning the rules} and \emph{practicing} first! Likewise, it is not wise to throw yourself at the task of writing a thesis/dissertation in \LaTeX\ without seriously considering the following \ntindex{recommendation}!
-
-\begin{tcolorbox}[colback=green!8]
-  If you are going to spend zillions of hours writing your thesis/dissertation using the \gls{novathesis} \LaTeX\ template (or some other \LaTeX\ template), be wise and spend a couple of hours learning how to use it properly by reading its manual.  And then, be even wiser, and spend a few more hours \href{https://github.com/joaomlourenco/novathesis/wiki\#learning-latex}{learning some \LaTeX}.  I am sure that the time you are investing now will pay itself countless times before you submit your thesis/dissertation.\\\parbox{\linewidth}{\raggedleft---~\emph{João Lourenço}}
-\end{tcolorbox}
-
-\subsection{Recognition}
-\label{sub:recognition}
-
-\ntindex[Recognition]{}
-
-The \gls{novathesis} template was born in~1996, and what you see now accumulates to many many hundreds (thousands?!) of working hours, unpaid and stolen from family and friends.  This work is available to the community under the \href{LaTeX project public license}{\LaTeX\ Project Public License v1.3c}, which means you are entitled to use it for free and change it at your will.  However, if you decide to use this template to write your thesis/dissertation, \textbf{be fair to the developers} and:
+But there are some differences:
 \begin{enumerate}
-  \item \ntindex[novathesis!Citation]{} Cite the \gls{novathesis} manual~\cite{novathesis-manual} in a place of your choice (e.g., in the \emph{Acknowledgments}) of your thesis/dissertation with “\verb!\cite{novathesis-manual}!” .  If you cite it this way, the correct entry will be added automatically to your bibliography (no need to worry with the necessary BibTeX entry, as it will be added automatically);
-  \item Go to the
-\href{https://github.com/joaomlourenco/novathesis}{\ntindex[GitHub!project web page]{project web page} in GitHub} and give the project a \ntindex[GitHub!stars]{star} (marked with a red ellipse at the top-right in Figure~\ref{fig:github}); and
-  \item Make a \ntindex[donations]{donation} by visiting the \gls{novathesis} project page and clicking in the button marked with a green ellipse at the top-center in Figure~\ref{fig:github}).  Alternatively, just click \href{https://www.paypal.com/donate/?hosted_button_id=8WA8FRVMB78W8}{\fcolorbox{DarkGreen}{gray!15}{\textbf{~HERE~}}} and your browser will be directed to the right page.
+	\item The dominating force inside the nucleus is the strong force rather than the electromagnetic one.
+	\item Since the strong force is short range and attractive, the potential in which the nucleons exist is created by all the other nucleons in contrast to the force between the atomic electrons and the spatially separated positive charge of the nucleus.
 \end{enumerate}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\linewidth]{github1}
-    \caption{The \gls{novathesis} project web page in GitHub.}
-    \label{fig:github}
-\end{figure}
+Two fundamental models—the liquid-drop model and the shell model—represent key milestones in this development. Their reconciliation explains many nuclear phenomena, particularly the emergence of magic numbers and the behavior of exotic nuclei.
 
-\section{The \emph{NOVAthesis} Template}
-\label{sec:a_bit_of_history}
+\subsection{The Liquid-drop Model}
 
-\ntindex[Template]{}
+The liquid-drop model, first formulated comprehensively by Weizsäcker and discussed in detail by Bethe and Bacher in 1936 \cite{bethe_nuclear_1936}, treats the nucleus analogously to a charged droplet of incompressible fluid. This model emphasizes collective properties of the nucleus, such as binding energy, surface tension, and Coulomb repulsion among protons.
 
-The \gls{novathesis} template was born at the \gls{DI} of  \gls{FCT} of \gls{NOVA}, Portugal.  But the user base grew… initially grew to other Departments of FCT-NOVA, then to other Schools of NOVA, and later to other Schools of other Universities.  Currently more than~25 Schools are natively supported by the \gls{novathesis} template (see Tables~\ref{tab:supported_schools_NOVA University Lisbon}, \ref{tab:supported_schools_University of Lisbon}, \ref{tab:supported_schools_University of Minho}, \ref{tab:supported_schools_Instituto Politécnico de Lisboa}, \ref{tab:supported_schools_Instituto Politécnico de Setúbal}, and \ref{tab:supported_schools_Other Universities/Schools/Degrees}).
+The semi-empirical mass formula (also called the Bethe-Weizsäcker formula) captures essential trends:
 
-\newenvironment{ntUniversity}[1]{
-  \renewcommand\tabularxcolumn[1]{m{##1}}% for vertical centering text in X column
-  % \renewcommand\cellgape{\Gape[1cm]}
-  % \setcellgapes{20pt}
-  % \makegapedcells
-  % % \setlength{\extrarowheight}{20pt}
-  % \renewcommand{\arraystretch}{2}
-  \rowcolors{1}{}{GhostWhite}
-    \xltabular{\linewidth}{cX}%
-      \caption{#1's Schools supported by the \gls{novathesis} template\label{tab:supported_schools_#1}}\\
-    \toprule%
-    \rowcolor{Gainsboro}%
-    & \Gape[1.5ex]{\thead[l]{#1}}\\
-    \midrule%
-}{%
-    \bottomrule
-    \endxltabular%
-}
+\[B(A,Z) = a_VA - a_SA^{2/3} - a_C\frac{Z(Z-1)}{A^{1/3}} - a_A\frac{(N-Z)^2}{A}\pm \delta(N,Z)\]
 
-\makeatletter
-\newtoggle{coverspace}
-\newcommand{\docCover}[1]{%
-  \setlength{\fboxsep}{0pt}%
-  \togglefalse{coverspace}%
-    \Gape[1.5ex]{\begin{mcellbox}[cc]
-    \@for\myi:=#1\do{%
-      \fbox{\colorbox{White}{\includegraphics[align=c,width=1.5cm]{1up/\myi}}}%
-        \ifx\@xfor@nextelement\@nnil
-          % last iteration
-        \else
-          % not last iteration
-          \iftoggle{coverspace}{\togglefalse{coverspace}\\\\[-14pt]}{\toggletrue{coverspace}~}%
-        \fi
-  }%
-    \end{mcellbox}}
-}
-\makeatother
-\newcommand{\schlName}[3]{\textbf{#1} (\href{#3}{#2})}
-\newcommand{\degreeName}[3]{\newline\null\quad • #1 \href{#3}{(#2)}}
+where each term accounts for volume, surface, Coulomb, asymmetry, and pairing effects respectively.
 
-\begin{ntUniversity}{NOVA University Lisbon}
-  {
-      \docCover{nova-fct-phd-en,nova-fct-msc-en}
-  } &  {
-    \schlName{NOVA School of Science and Technology}{FCT-NOVA}{https://www.fct.unl.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.fct.unl.pt/en/education/phd-programmes}
-    \degreeName{All MSc Programs}{MSc}{https://www.fct.unl.pt/en/education/master-degrees}
-  }\\
-  {
-      \docCover{nova-fcsh-phd-en,nova-fcsh-msc-en}
-  } &  {
-    \schlName{NOVA School of Social Sciences and Humanities}{FCSH-NOVA}{https://www.fcsh.unl.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.fcsh.unl.pt/cursos/\#doutoramentos}
-    \degreeName{All MSc Programs}{MSc}{https://www.fcsh.unl.pt/cursos/\#mestrados}
-  }\\
-  {
-      \docCover{nova-ims-phd-en,nova-ims-msc-mmaa-en,%
-                nova-ims-msc-megi-en,nova-ims-msc-mgi-en,%
-                nova-ims-msc-mcsig-en,nova-ims-msc-mgt-en}
-  } &  {
-    \schlName{NOVA Information Management School}{NOVA-IMS}{https://www.novaims.unl.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.novaims.unl.pt}
-    \degreeName{Master's in Data Science and Advanced Analytics}{MMAA}{https://www.novaims.unl.pt/mdsaa-ba}
-    \degreeName{Master's in in Statistics and Information Management}{MEGI}{https://www.novaims.unl.pt}
-    \degreeName{Master's in Information Management}{MGI}{https://www.novaims.unl.pt}
-    \degreeName{Master's in Geographic Information Systems and Science}{MCSIG}{https://www.novaims.unl.pt/unigis}
-    \degreeName{Master's in Geospatial Technologies}{GeoTech}{https://www.novaims.unl.pt/geotech}
-  }\\
-  {
-      \docCover{nova-ensp-phd-en,nova-ensp-msc-en}
-  } &  {
-    \schlName{National School of Public Heath}{ENSP-NOVA}{https://www.ensp.unl.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.ensp.unl.pt/courses/phds}
-    \degreeName{All MSc Programs}{MSc}{https://www.ensp.unl.pt/courses/masters}
-  }\\
-  {
-      \docCover{nova-itqb-phd-green-en,nova-itqb-msc-green-en,%
-                nova-itqb-phd-gray-en,nova-itqb-msc-gray-en}
-  } & {
-    \schlName{Instituto de Tecnologia Química e Biológica}{ITQB-NOVA}{https://www.itqb.unl.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.itqb.unl.pt/education/PhD\%20Programs}
-    \degreeName{All MSc Programs}{MSc}{https://www.itqb.unl.pt/education/masters-courses}
-  }\\
-\end{ntUniversity}
+While successful at explaining global nuclear properties—such as the approximate binding energy per nucleon—it could not account for observed anomalies in nuclear stability, such as nuclei at specific nucleon numbers (2, 8, 20, 28, 50, 82, 126) exhibiting enhanced stability: the magic numbers.
 
-\begin{ntUniversity}{University of Lisbon}
-  {
-    \docCover{ulisboa-ist-phd-en,ulisboa-ist-msc-en}
-  } & {
-    \schlName{Instituto Superior Técnico}{IST-UL}{https://tecnico.ulisboa.pt}
-    \degreeName{All PhD Programs}{PhD}{https://tecnico.ulisboa.pt/en/education/courses/phd-programmes/}
-    \degreeName{All MSc Programs}{MSc}{https://tecnico.ulisboa.pt/en/education/courses/masters-programmes}
-  }\\
-  {
-    \docCover{ulisboa-fc-phd-en,ulisboa-fc-msc-en}
-  } & {
-    \schlName{Faculdade de Ciências}{FCUL}{https://ciencias.ulisboa.pt}
-    \degreeName{All PhD Programs}{PhD}{https://ciencias.ulisboa.pt/en/educational-offer/}
-    \degreeName{All MSc Programs}{MSc}{https://ciencias.ulisboa.pt/en/educational-offer/}
-  }\\
-  {
-    \docCover{ulisboa-fmv-phd-en,ulisboa-fmv-msc-en}
-  } & {
-    \schlName{Faculdade de Medicina Veterinária}{FMV-UL}{https://www.fmv.ulisboa.pt}
-    \degreeName{All PhD Programs}{PhD}{https://www.fmv.ulisboa.pt/en/study/phd}
-    \degreeName{All MSc Programs}{MSc}{https://www.fmv.ulisboa.pt/pt/ensino/mestrados}
-  }\\
-\end{ntUniversity}
+\subsection{The Shell Model}
+
+The limitations of the liquid-drop model led to the proposal of the shell model, notably formulated by Maria Goeppert Mayer and J. Hans D. Jensen independently in 1949 \cite{mayer_shell_1968}. Their work, expanding on the early suggestions of Elsasser, showed that nucleons move in quantized energy levels within a mean potential well created by all other nucleons—analogous to electrons in atomic orbitals.
+
+Initially, it was thought that a simple three-dimensional harmonic oscillator potential could describe the structure. However, it was soon realized that including a strong spin-orbit coupling term, where the nucleon's spin couples to its orbital motion, was critical to reproduce the magic numbers observed experimentally \cite{haxel_magic_nodate,mayer_shell_1968}.
+
+In particular, spin-orbit splitting lifts the degeneracy of orbital states, energetically favoring high-angular-momentum states (e.g., $j=l+1/2$), thus producing large energy gaps at specific nucleon numbers—those corresponding to the magic numbers.
+
+The modified energy level filling, based on this strong spin-orbit interaction, led to a successful explanation for the pronounced nuclear stability at nucleon numbers:
+
+\[2,8,20,28,50,82,126\]
+
+for both protons and neutrons separately \cite{haxel_magic_nodate,mayer_shell_1968}.
 
 
-\newdata*{schlname}
-\newdata*{schlurl}
-\schlname(ea):={School of Architecture}
-\schlurl(ea):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/School-of-Architecture.aspx}
-\schlname(ec):={School of Sciences}
-\schlurl(ec):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-sciences.aspx}
-\schlname(ed):={School of Law}
-\schlurl(ed):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-law.aspx}
-\schlname(ee):={School of Engineering}
-\schlurl(ee):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-Engineering.aspx}
-\schlname(eeg):={School of Economics and Management}
-\schlurl(eeg):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-economics-and-management.aspx}
-\schlname(em):={School of Medicine}
-\schlurl(em):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-Medicine.aspx}
-\schlname(ep):={School of Psychology}
-\schlurl(ep):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-psychology.aspx}
-\schlname(ese):={School of Nursing}
-\schlurl(ese):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-nursing.aspx}
-\schlname(i3b):={Research Institute 13Bs}
-\schlurl(i3b):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/Institute-I3Bs.aspx}
-\schlname(ics):={Institute of Social Sciences}
-\schlurl(ics):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/institute-of-social-sciences.aspx}
-\schlname(ie):={Institute of Education}
-\schlurl(ie):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/institute-of-education.aspx}
-\schlname(elach):={School of Arts and Humanities}
-\schlurl(elach):={https://www.uminho.pt/EN/uminho/Units/schools-and-institutes/Pages/school-of-arts-and-humanities.aspx}
+\subsubsection{Magic Numbers and Shell Closures}
 
+In the shell model:
 
-\begin{ntUniversity}{University of Minho}
-    {
-      \docCover{uminho-ea-phd-en,uminho-ea-msc-en}
-    } & {
-      \schlName{\theschlname(ea)}{\uppercase{ea}-UMINHO}{\theschlurl(ea)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ec-phd-en,uminho-ec-msc-en}
-    } & {
-      \schlName{\theschlname(ec)}{\uppercase{ec}-UMINHO}{\theschlurl(ec)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ed-phd-en,uminho-ed-msc-en}
-    } & {
-      \schlName{\theschlname(ed)}{\uppercase{ed}-UMINHO}{\theschlurl(ed)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ee-phd-en,uminho-ee-msc-en}
-    } & {
-      \schlName{\theschlname(ee)}{\uppercase{ee}-UMINHO}{\theschlurl(ee)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-eeg-phd-en,uminho-eeg-msc-en}
-    } & {
-      \schlName{\theschlname(eeg)}{\uppercase{eeg}-UMINHO}{\theschlurl(eeg)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-em-phd-en,uminho-em-msc-en}
-    } & {
-      \schlName{\theschlname(em)}{\uppercase{em}-UMINHO}{\theschlurl(em)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ep-phd-en,uminho-ep-msc-en}
-    } & {
-      \schlName{\theschlname(ep)}{\uppercase{ep}-UMINHO}{\theschlurl(ep)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ese-phd-en,uminho-ese-msc-en}
-    } & {
-      \schlName{\theschlname(ese)}{\uppercase{ese}-UMINHO}{\theschlurl(ese)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ics-phd-en,uminho-ics-msc-en}
-    } & {
-      \schlName{\theschlname(ics)}{\uppercase{ics}-UMINHO}{\theschlurl(ics)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-ie-phd-en,uminho-ie-msc-en}
-    } & {
-      \schlName{\theschlname(ie)}{\uppercase{ie}-UMINHO}{\theschlurl(ie)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-elach-phd-en,uminho-elach-msc-en}
-    } & {
-      \schlName{\theschlname(elach)}{\uppercase{elach}-UMINHO}{\theschlurl(elach)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-    {
-      \docCover{uminho-i3b-phd-en,uminho-i3b-msc-en}
-    } & {
-      \schlName{\theschlname(i3b)}{\uppercase{i3b}-UMINHO}{\theschlurl(i3b)}
-      \degreeName{All PhD Programs}{PhD}{https://www.uminho.pt/EN/education/educational-offer/Pages/PhD-degrees.aspx}
-      \degreeName{All MSc Programs}{MSc}{https://www.uminho.pt/EN/education/educational-offer/Pages/Master-degrees.aspx}
-    }\\
-\end{ntUniversity}
-
-
-%
-% % \begin{ntUniversity}{ISCTE — Instituto Universitário de Lisboa}
-% %     \ntSchool{cover-iscteiul-eta-phd}%
-% %              {Escola{ de Tecnologias e Arquitectura};{ETA-ISCTE-IUL};{https://ciencia.iscte-iul.pt/schools/escola-tecnologias-arquitectura}%}
-% % \end{ntUniversity}
-%
-\begin{ntUniversity}{Instituto Politécnico de Lisboa}
-    {
-      \docCover{ipl-isel-msc-en}
-    } & {
-      \schlName{Instituto Superior de Engenharia de Lisboa}{ISEL-IPL}{https://www.isel.pt}
-      \degreeName{All MSc Programs}{MSc}{https://www.isel.pt/candidatos/candidaturas/mestrados}
-    }\\
-\end{ntUniversity}
-
-\begin{ntUniversity}{Instituto Politécnico de Setúbal}
-    {
-      \docCover{ips-ests-msc-en}
-    } & {
-      \schlName{Escola Superior de Tecnologia de Setúbal}{ISEL-IPL}{https://www.estbarreiro.ips.pt}
-      \degreeName{All MSc Programs}{MSc}{https://www.estbarreiro.ips.pt/candidaturas/mestrados}
-    }\\
-\end{ntUniversity}
-
-\begin{ntUniversity}{Other Universities/Schools/Degrees}
-    {
-      \docCover{other-esep-msc-en}
-    } & {
-      \schlName{Escola Superior de Enfermagem do Porto}{ESEP}{https://www.esenf.pt/pt}
-      \degreeName{All MSc Programs}{MSc}{https://estudar.esenf.pt/mestrados}
-    }\\
-\end{ntUniversity}
-
-
-\section{Getting Started}
-\label{sec:getting_started}
-
-The template provides an \emph{easy to use} setting for you to write your thesis/dissertation in \LaTeX:
 \begin{itemize}
-  \item  Select your school;
-  \item Fill your thesis metadata (title, research field, etc) in the file “\texttt{template.tex}”;
-  \item Create your thesis/dissertation contents using the files in folder “\texttt{Chapters}”; and
-  \item Process using you favorite \LaTeX\ processor (pdf\LaTeX, \XeLaTeX\ or \LuaLaTeX).
+	\item A closed shell means that all available states at a given energy are filled.
+	\item Nuclei with both proton and neutron numbers equal to magic numbers (so-called doubly magic nuclei, e.g., $^{16}$O, $^{208}$Pb) exhibit especially high binding energies, spherical shapes, and relatively low excitation spectra.
 \end{itemize}
 
-\subsection{Using Overleaf}
-\label{sub:using_overleaf}
-
-\ntindex[Installation!Overleaf]{}
-\ntindex[Using!Overleaf]{}
-
-\newcommand{\Overleaf}{\href{https://www.overleaf.com?r=f5160636&rm=d&rs=b}{Overleaf}}
-
-\begin{wrapfigure}{r}{0.3\linewidth}
-% \vspace*{-10ex}
-\includegraphics[width=\linewidth]{overleaf}%
-\caption{NOVAthesis template in Overleaf.}
-\label{fig:overleaf}
-\end{wrapfigure}
-\mbox{}\Overleaf\ is a collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific documents. Like “Google Docs”,  for \LaTeX\ users. You can edit and compile your \LaTeX\ source on the cloud, without installing software in your own computer, and, much like \emph{Google Docs}, you can share your document with others users and everybody can edit the same file at the same time (this may be dangerous).
-
-If you do not have an account in \Overleaf, you must \href{https://www.overleaf.com?r=f5160636&rm=d&rs=b}{create one first}.
-
-Once you have an account, please access the \gls{novathesis} template in \href{https://www.overleaf.com/latex/templates/novathesis-v7-dot-1-18/jhqwhtcwbmqc}{Overleaf} and select the green button \emph{Open as Template} (see \Autoref{fig:overleaf}).
-
-\bgroup
-  \itshape
-  Please notice that the version currently available in Overleaf (v7.1.18) is slightly outdated (current version is v\novathesisversion). A new version (v7.1.29) will be submitted to Overleaf soon.  Until then, please:
-  \begin{enumerate}
-    \item Download the \href{https://github.com/joaomlourenco/novathesis/archive/main.zip}{latest version} from the GitHub repository as a Zip file.
-    \item Login to your favorite LaTeX cloud service. I recommend \href{https://www.overleaf.com/?r=f5160636&rm=d&rs=b}{Overleaf} but there are alternatives (these instructions apply to Overleaf and you'll have to adapt for other providers).
-    \item In the menu select: \texttt{New project} $\rightarrow$ \texttt{Upload project}.
-    \item Upload the zip file.
-    \item Select “template.tex” as the main file.
-    \item Let Overleaf compile the document.
-  \end{enumerate}
-\egroup
-
-\begin{tcolorbox}[colback=red!8]
-	Notice that you need a (student) subscription to compile the \novathesis\ template in Overleaf, otherwise your compilation will always time out.
-\end{tcolorbox}
-
-\subsection{Using a Local \LaTeX\ Installation Local}
-\label{sub:using_local_latex}
-
-\ntindex[Installation!Local installation]{}
-\ntindex[Using!Local installation]{}
-
-\begin{wrapfigure}{r}{0.3\linewidth}
-\vspace*{-7ex}
-\includegraphics[width=\linewidth]{github}%
-\caption{The NOVAthesis Project page in GitHub.}
-\label{fig:github2}
-\end{wrapfigure}
-
-First of all, start by installing \LaTeX\ in your computer.  There are two main distributions, \href{https://miktex.org}{\ntindex{\MikTeX}}\ and \href{https://www.tug.org/texlive/}{\ntindex{\TeXLive}}, and both of them are available for the~3 most popular Operating Systems: Linux, macOS and Windows.
-
-Be aware that a full installation of \MikTeX\ or \TeXLive\ will take near~5\,GB of hard disk space.  So, think twice before installing the full distribution.  See the \gls{novathesis} Wiki for the \href{https://github.com/joaomlourenco/novathesis/wiki/installing-latex#minimal-installation-in-any-of-the-systems-above}{list of packages required to compile the template}.
-
-Once you have \LaTeX\ up and running, remember to install a good \LaTeX\ text editor.  I recommend you to take a look at  \href{https://tex.stackexchange.com/questions/339/latex-editors-ides}{this post} in the \url{tex.stackexchange.com} site.  If you want a quick and dirty recommendation, try \href{https://www.texstudio.org/}{\ntindex{TeXStudio}}.
-
-Now, you must access the \gls{novathesis} repository in \href{https://github.com/joaomlourenco/novathesis}{GitHub}, select the green button \emph{Code} and then \emph{download} (or \emph{clone}) the template.  You will always get the latest version of the template (currently v\novathesisversion\ from \novathesisdate).
+Haxel, Jensen, and Suess \cite{haxel_magic_nodate} provided a succinct explanation showing how a strong spin-orbit coupling splits the energy levels such that filling up the states naturally reproduces the magic numbers.
 
 
-\section{Getting Help}
-\label{sec:getting_help}
+\subsubsection{Extension to Exotic Nuclei}
 
-\ntindex[Help]{}
+The classic shell model was originally built based on stable, near-$\beta$-stable nuclei. However, advances in experimental techniques have allowed the study of exotic nuclei — nuclei far from stability, with unusual neutron-to-proton ratios.
 
-No! You don't have to use this template to write your thesis.  You don't even have to use \LaTeX.  However, writing a thesis is serious stuff, and which tool you shall use to write it is not a decision to make lighthearted.
+In these systems:
 
-\LaTeX\ is hard enough by itself.  This template aims at making your life easier, but not easy. If you choose to use this template to write your thesis, you are very welcome.  However, don't expect me to provide you help with \LaTeX.  Look for help with your friends (you have some friends, don't you?), or search the web, or try even to read some book(s) on \LaTeX. In the end you will certainly find the experience rewarding.
+\begin{itemize}
+	\item Traditional magic numbers can weaken or even disappear \cite{otsuka_evolution_2020}.
+	\item New magic numbers (e.g., $N=16$, $N=34$) can emerge \cite{otsuka_evolution_2020}.
+	\item Nuclear deformations become more common, especially near the so-called "island of inversion" (around $N=20$) \cite{otsuka_evolution_2020}.
+	\item Phenomena like neutron halos emerge \cite{otsuka_evolution_2020}.
+\end{itemize}
 
-When you come to the point of “\emph{How do I do this with the \novathesis\ template?}”, remember…
+This phenomenon has led to the concept of shell evolution, where the shell structure depends on the balance between the nuclear force components (central, spin-orbit, and tensor interactions) and changes with proton-neutron ratios.
 
-\begin{enumerate}
-  \item To check the \href{https://github.com/joaomlourenco/novathesis/wiki}{\gls{novathesis} wiki} and have some hope!  \emojiSmile
-  \item \href{https://www.google.com}{Google} is your best friend.
-  \item Search the \href{https://github.com/joaomlourenco/novathesis/discussions}{GitHub Discussions page} for a question related to yours.  \emph{If and only if} you don't find one, then post your own question in English please!
-  \item Search the \href{https://www.facebook.com/groups/novathesis}{NOVAtheis Facebook group} for a question related to yours.  \emph{If and only if} you don't find one, then post your own question in either Portuguese or English, at your preference.
-\end{enumerate}
+\subsection{Conclusion}
 
-When you post your own question, remember to \textbf{always} state the \gls{novathesis} version number you are using and referring to.
+In summary, the liquid-drop model offered a macroscopic view of nuclear behavior, while the shell model introduced microscopic structure and quantization effects that explain nuclear stability at magic numbers. The discovery of exotic nuclei has highlighted that the shell structure itself is dynamic and evolves under extreme conditions, demonstrating the richness and complexity of nuclear structure beyond the stable valley.
 
-\begin{tcolorbox}[colback=blue!8]
-	\centering
-Please do not attempt to contact me directly (email, Messenger, etc)…\\I WILL NOT REPLY!
-\end{tcolorbox}
+%\subsection{Liquid-drop Model}
+%
+%Proposed by Bethe and Bacher in 1936 \cite{bethe_nuclear_1936}.
+%
+%In this model, nucleons were strongly interacting particles that make up the nucleus, which in turn was considered to be like
+%a drop of charged incompressible nuclear liquid.
 
-
-\subsection{Suggestions, Bugs and Feature Requests} % (fold)
-\label{sub:suggestions_bugs_and_feature_requests}
-
-\begin{description}
-  \item[Help:] If you just need some help, see above \Autoref{sec:getting_help}.
-  \item[Suggestion:] \ntindex[Suggestions]{} Do you have a suggestion/recommendation? Please add it to the wiki and help other users!
-  \item[Bug:] \ntindex[Bugs]{} Did you find a bug? Please open an issue. Thanks!
-  \item[New Feature:] \ntindex[Feature Requests]{} Would you like to request a new feature (or support of a new School)? Please open an issue. Thanks!
-
-\end{description}
-
-
-
-% subsection suggestions_bugs_and_feature_requests (end)
-
-
-
-
-\section{Donors}
-\label{sec:donations}
-
-\ntindex[Donations]{}
-
-The \href{https://github.com/joaomlourenco/novathesis/wiki#donators}{list of \emph{Donnors}} is available in the \gls{novathesis} Project page.
-
-
-\section{Disclaimer}
-\label{sec:disclaimer}
-
-\ntindex[Disclaimer]{}
-
-Although the \gls{novathesis} template is endorsed by some Schools (e.g., \href{https://www.fct.unl.pt/estudante/informacao-academica/teses-e-dissertacoes}{linked from FCT-NOVA web site}), the \gls{novathesis} template \textbf{this not an official template} for any School.
-
-The \gls{novathesis} template exists to make your life easier and we do our best to make it compliant to the supported ($+25$) Schools' regulations but, in the end of the line, you and only you are accountable for both the look and the contents of the document you submit as your thesis/dissertation.
+%However, research showed that certain combinations of protons and neutrons formed more tightly bound nuclei than other \cite{mayer_shell_1968,haxel_magic_nodate}.
+%
+%\subsection{Shell Model}
+%
+%\subsubsection{Magic Numbers}
+%
+%Nuclei can be thought of as having shell structure analogous to the atomic energy levels observed for electrons.
+%
+%\subsubsection{Exotic Nuclei}
+%
+%As nuclei became more neutron rich, the nuclear surface becomes more diffuse and the nuclear density decreases.
+%\begin{enumerate}
+%	\item Nuclear Halos;
+%	\item Shell Quenching.
+%\end{enumerate}
+%
+%
+%\section{The FAIR Facility}
+%
+%
+%\section{Author's Contribution and Thesis Overview}
