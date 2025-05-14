@@ -27,7 +27,7 @@
 \section{Context and Goal of the Experiment} % (fold)
 \label{sec:contex_goal_experiment}
 
-The proposed experiment, detailed in research proposal G-24-00249, aims to investigate the structure of the neutron-rich fluorine isotope, $^{25}$F, through one-proton knockout reactions. This study is motivated by the "drastic extension of the neutron drip line for Z=9 compared to Z=8 isotopes," a phenomenon that remains poorly understood \cite{ahn_location_2019}. The experiment seeks to elucidate how the $^{24}$O core is polarized by the presence of an additional proton in $^{25}$F, thereby shedding light on the mechanisms responsible for the observed drip line extension.
+The proposed experiment, detailed in research proposal G-24-00249 \cite{panin2024neutron}, aims to investigate the structure of the neutron-rich fluorine isotope, $^{25}$F, through one-proton knockout reactions. This study is motivated by the "drastic extension of the neutron drip line for Z=9 compared to Z=8 isotopes," a phenomenon that remains poorly understood \cite{ahn_location_2019}. The experiment seeks to elucidate how the $^{24}$O core is polarized by the presence of an additional proton in $^{25}$F, thereby shedding light on the mechanisms responsible for the observed drip line extension.
 
 The experiment will employ the quasi-free scattering (\gls{QFS}) reaction $^{25}$F(p,2p)$^{24}$O in inverse kinematics, effectively knocking out a deeply bound valence proton from the $^{25}$F nucleus \cite{panin_exclusive_2016}. This approach will utilize the R3B experimental setup, including the high-efficiency neutron detector NeuLAND \cite{boretzky_neuland_2021}, to achieve complete kinematic measurements and obtain accurate spectroscopic information on the populated final states of $^{24}$O. By analyzing the experimental data, researchers aim to determine the extent to which the single $d_{5/2}$ proton in $^{25}$F modifies the structure of the core nucleons, potentially indicating deformation or polarization of the $^{24}$O core \cite{macchiavelli_core_2020}.
 
@@ -35,6 +35,12 @@ Ultimately, the goal of this experiment is to provide a more detailed understand
 
 
 \section{The GSI Accelerator System}
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{FAIR_R3B}
+	\caption{Layout of GSI-FAIR with Cave C highlighted, where the prototype of the future NUSTAR R3B setup stands and where this experiment took place.}
+	\label{fig:GSI_FAIR_R3B}
+\end{figure}
 
 \gls{GSI}
 
@@ -46,13 +52,24 @@ Ultimately, the goal of this experiment is to provide a more detailed understand
 
 \subsection{Beam used in Experiment}
 
-Primary Beam: 40Ar 700 MeV/u
+In the proposed experiment \cite{panin2024neutron}, a $^{40}$Ar primary beam with an energy of 700 MeV/u is employed to produce a secondary beam containing the $^{25}$F isotope of interest. The primary beam impinges on a beryllium target located at the \gls{FRS}, inducing nuclear fragmentation reactions. This process generates a cocktail beam consisting of various isotopes, including $^{25}$F, which is then selected and guided towards the experimental setup in Cave C.
 
-Beryllium Target at FRS -> Creates cocktail beam with 25F
+The \gls{FRS} is used to separate and purify the secondary beam, ensuring a sufficient intensity of $^{25}$F for the subsequent experiment. LISE++ simulations, using the EPAX3.1a production model, predict an intensity of approximately 30 ions per second (pps) of $^{25}$F on the secondary target. The total intensity of the secondary cocktail beam in Cave C is expected to be below 700 pps, with a purity of around 5\% for $^25$F. The relatively low total intensity allows for data acquisition without significant downscaling of triggers and minimizes dead time.
 
-Liquid Hidrogen Target in Cave C in center of CALIFA
+In Cave C, the $^{25}$F secondary beam interacts with a liquid hydrogen (LH2) target, which serves as the reaction target for the one-proton knockout reaction $^{25}$F(p,2p)$^{24}$O. The LH2 target is positioned in the center of the CALIFA calorimeter, enabling the detection of outgoing protons from the reaction. The use of a 150 mm thick LH2 cell maximizes the reaction yield, compensating for the low intensity of the $^{25}$F beam.
+
 
 \section{R3B Setup}
+
+\begin{newpdflayout}{210mm}{297mm}%{420mm}
+	
+	\begin{figure}
+		\includegraphics[width=\linewidth]{R3BSetup}
+		\caption{}
+		\label{fig:R3B_Setup}
+	\end{figure}
+
+\end{newpdflayout}
 
 \gls{R3B}
 
@@ -79,7 +96,7 @@ Liquid Hidrogen Target in Cave C in center of CALIFA
 \gls{RPC}
 \begin{figure}
 	\includegraphics[width=\linewidth]{SchematicR3BSetup}
-	\caption{Schematic representation of the R3B setup.}
+	\caption{Schematic representation of the R3B setup with beam lines.}
 	\label{fig:R3BSetup}
 \end{figure}
 
