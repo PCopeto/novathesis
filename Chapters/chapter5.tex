@@ -8,16 +8,14 @@
 
 \typeout{NT FILE chapter5.tex}%
 
-\chapter{Simulation Framework}
+\chapter{Simulation and Analysis}
 \label{cha:simulations}
 
 \epigraph{
 	Whenever there is a problem, it usually lies between the chair and the monitor.
-}
+}%{Manuel Xarepe}
 
-Simulations are a fundamental component of modern nuclear physics experiments, providing a virtual environment where experimental setups, detector responses, and physical processes can be modeled and tested prior to data acquisition. The simulation work for this thesis relies on three key software tools: Geant4, ROOT, and R3BRoot. Together, they form a comprehensive framework that enables the design, implementation, analysis, and validation of realistic nuclear experiments. The following subsections provide a brief overview of each tool and their respective roles in this work.
-
-The simulation work in this thesis was conducted using the R3BRoot framework, the dedicated simulation and analysis environment developed for experiments within the \gls{R3B} collaboration. While R3BRoot was the only framework used directly, it is built upon two widely used and powerful tools in nuclear and high-energy physics: Geant4 and ROOT. A brief overview of these tools is presented here to provide context for the capabilities offered by R3BRoot.
+Simulations are a fundamental component of modern nuclear physics experiments, providing a virtual environment where experimental setups, detector responses, and physical processes can be modeled and tested prior to data acquisition. The simulation work in this thesis was conducted using the R3BRoot framework, the dedicated simulation and analysis environment developed for experiments within the \gls{R3B} collaboration. While R3BRoot was the only framework used directly, it is built upon two widely used and powerful tools in nuclear and high-energy physics: Geant4 and ROOT. It forms a comprehensive framework that enables the design, implementation, analysis, and validation of realistic nuclear experiments. A brief overview of these tools is presented here to provide context for the capabilities offered by R3BRoot.
 
 \begin{figure}
 	\centering
@@ -38,7 +36,7 @@ ROOT \cite{brun_root_1997} is an object-oriented data analysis framework that pr
 
 \section{R3BRoot}
 
-R3BRoot \cite{bertini_r3broot_2011} is the main framework used throughout this thesis for performing all simulation and analysis tasks. Developed specifically for experiments at the \gls{R3B} setup, R3BRoot builds on the FairRoot framework and incorporates both Geant4 and ROOT. It provides pre-configured detector geometries, digitization routines, reconstruction algorithms, and analysis tools tailored to the \gls{R3B} experimental environment.
+R3BRoot \cite{bertini_r3broot_2011} is the main framework used throughout this thesis for performing all simulation and analysis tasks. Developed specifically for experiments at the \gls{R3B} setup, R3BRoot builds on the FairRoot framework \cite{al-turany_fairroot_2012} and incorporates both Geant4 and ROOT. It provides pre-configured detector geometries, digitization routines, reconstruction algorithms, and analysis tools tailored to the \gls{R3B} experimental environment.
 
 Using R3BRoot, detailed simulations of the $^{25}$F(p,2p)$^{24}$O experiment were performed, including particle generation, tracking through the GLAD magnet, propagation through the tracking detectors and the \gls{RPC}, and emulation of detector responses. The framework also allowed the incorporation of realistic detector resolutions and systematics, enabling the generation of data that closely mirrors what will be observed experimentally. This simulated data formed the basis for developing and validating the Multidimensional Fitting functions presented in this thesis.
 
@@ -46,7 +44,7 @@ Using R3BRoot, detailed simulations of the $^{25}$F(p,2p)$^{24}$O experiment wer
 
 \section{Multidimensional Fitting}
 
-In experiments like those conducted with the \gls{R3B} setup, the information directly recorded by detectors is often insufficient on its own to fully reconstruct the physical quantities of interest. Raw observables such as hit positions and times must be interpreted in the context of the particle’s full trajectory, charge, and energy. To bridge this gap, multidimensional fitting (MDF) methods are used. These tools allow us to model complex, nonlinear relationships between measurable detector signals and the underlying physical properties of particles.
+In experiments like those conducted with the \gls{R3B} setup, the information directly recorded by detectors is often insufficient on its own to fully reconstruct the physical quantities of interest. Raw observables such as hit positions and times must be interpreted in the context of the particle’s full trajectory, charge, and energy. To bridge this gap, multidimensional fitting (MDF) methods, a procedure of the ROOT framework \cite{ROOTMDF}, are used. These tools allow us to model complex, nonlinear relationships between measurable detector signals and the underlying physical properties of particles.
 
 Multidimensional fitting is particularly powerful in the context of quasi-free scattering reactions, such as the one studied in the $^{25}$F(p,2p)$^{24}$O experiment. Given the diversity and overlap of signals produced by different particles and trajectories in the \gls{R3B} setup, MDF enables a more accurate reconstruction of particle kinematics by using correlated detector data. It also allows us to compensate for the intrinsic limitations of individual detectors by combining information from multiple systems.
 

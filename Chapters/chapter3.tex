@@ -34,11 +34,15 @@ The experiment will employ the quasi-free scattering (\gls{QFS}) reaction $^{25}
 Ultimately, the goal of this experiment is to provide a more detailed understanding of the nuclear structure of neutron-rich fluorine isotopes and the underlying reasons for the extended neutron drip line at Z=9. The results will contribute to a more comprehensive picture of nuclear forces and structure in exotic nuclei, addressing a fundamental question in nuclear physics.
 
 
-\underline{ADD IMAGE OF ISOTOPE CHART SHOWCASING THE DIFFERENCE IN THE NEUTRON DRIP LINE}
+\begin{figure}
+	\includegraphics[width=\linewidth]{NeutronDripLine}
+	\caption{Visualization of the neutron drip line extension from oxygen to fluorine. The extended neutron-rich limit for fluorine isotopes illustrates how additional protons influence nuclear binding near the drip line. Figure adapted from the IAEA Live Chart of Nuclides \cite{IAEA_NuclideChart}.}
+	\label{fig:NeutronDripLine}
+\end{figure}
 
 
 \section{The GSI Accelerator System}
-Annex \ref{ann:gsi_facility}
+%Annex \ref{ann:gsi_facility}
 
 The previously described experiment will take place at the GSI Helmholtzzentrum für Schwerionenforschung in Darmstadt, Germany. GSI’s accelerator complex, seen in Figure \ref{fig:GSI}, provides the infrastructure required to produce and deliver rare isotope beams, such as $^{25}$F, for inverse kinematics reactions. The \gls{R3B} setup, located in Cave C downstream of the FRS, enables complete kinematic reconstruction, making it well-suited for the spectroscopic investigation of exotic nuclei. The following sections outline the accelerator chain that delivers these beams—from ion production through the UNILAC and SIS18 to the FRS and the experimental area.
 
@@ -137,119 +141,124 @@ In Cave C, the $^{25}$F secondary beam interacts with a liquid hydrogen (LH2) ta
 
 The \gls{R3B} (Reactions with Relativistic Radioactive Beams) setup at GSI is designed for high-precision, kinematically complete measurements of nuclear reactions involving rare isotope beams at relativistic energies. For the investigation of the $^{25}$F(p,2p)$^{24}$O reaction, the configuration is optimized to detect all relevant particles emerging from the target—charged fragments, recoil protons, and neutrons—with high resolution and full angular coverage. The following description reflects the actual experimental layout, based on the schematic shown in Figure \ref{fig:ExperimentalSetupSketch}, and supported by the experimental proposal and detector-specific references.
 
-\begin{figure}
-	\includegraphics[width=\linewidth]{ExperimentalSetupSketch}
-	\caption{Sketch of the experimental setup at R$^3$B.} %Reprinted figure from Ref. \cite{panin2024neutron}.}
-	\label{fig:ExperimentalSetupSketch}
-\end{figure}
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{ExperimentalSetupSketch}
+%	\caption{Sketch of the experimental setup at R$^3$B.} %Reprinted figure from Ref. \cite{panin2024neutron}.}
+%	\label{fig:ExperimentalSetupSketch}
+%\end{figure}
 
-\begin{figure}
-	\includegraphics[width=\linewidth]{TrajectorySimulations}
-	\caption{Simulated trajectories through the GLAD magnet. The color map indicates the magnetic
-		field of the magnet. The LH2 target is located at the (0,0,0) point in front of GLAD. Reprinted figure from Ref. \cite{panin2024neutron}.}
-	\label{fig:TrajectorySimulations}
-\end{figure}
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{TrajectorySimulations}
+%	\caption{Simulated trajectories through the GLAD magnet. The color map indicates the magnetic
+%		field of the magnet. The LH2 target is located at the (0,0,0) point in front of GLAD. Reprinted figure from Ref. \cite{panin2024neutron}.}
+%	\label{fig:TrajectorySimulations}
+%\end{figure}
 
 
+
+%\begin{newpdflayout}{210mm}{297mm}%{420mm}
+	
+%	\begin{figure}
+%		\includegraphics[width=\linewidth]{R3BSetup}
+%		\caption{}
+%		\label{fig:R3B_Setup}
+%	\end{figure}
+
+%\end{newpdflayout}
 
 \begin{newpdflayout}{210mm}{297mm}%{420mm}
 	
 	\begin{figure}
-		\includegraphics[width=\linewidth]{R3BSetup}
-		\caption{}
-		\label{fig:R3B_Setup}
+		\includegraphics[width=\linewidth]{ExperimentalSetupSketch}
+		\caption{Sketch of the experimental setup at R$^3$B.}
+		\label{fig:ExperimentalSetupSketch}
 	\end{figure}
-
+	
 \end{newpdflayout}
 
-\gls{R3B}
+%\gls{R3B}
 
-\gls{R3B}
+%\gls{R3B}
 
-\gls{ToFD}
+%\gls{ToFD}
 
-\gls{ToFD}
+%\gls{ToFD}
 
-\gls{NeuLAND}
+%\gls{NeuLAND}
 
-\gls{NeuLAND}
+%\gls{NeuLAND}
 
-\gls{GLAD}
+%\gls{GLAD}
 
-\gls{GLAD}
+%\gls{GLAD}
 
-\gls{CALIFA}
+%\gls{CALIFA}
 
-\gls{CALIFA}
+%\gls{CALIFA}
 
-\gls{RPC}
+%\gls{RPC}
 
-\gls{RPC}
-\begin{figure}
-	\includegraphics[width=\linewidth]{SchematicR3BSetup}
-	\caption{Schematic representation of the R$^3$B setup with beam lines.}
-	\label{fig:R3BSetup}
-\end{figure}
+%\gls{RPC}
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{SchematicR3BSetup}
+%	\caption{Schematic representation of the R$^3$B setup with beam lines.}
+%	\label{fig:R3BSetup}
+%\end{figure}
 
 
 
 \subsection{Role of each detector}
 
-ALPIDE \cite{mager_alpide_2016}.
+\subsubsection{Beam Tracking and Initial Identification}
 
-\subsubsection{Incoming Beam Tracking and Identification}
+The experiment begins with a multi-wire proportional chamber (\textbf{MWPC}) placed at the entrance of Cave C. This detector provides coarse spatial information on the incoming secondary beam with minimal material interaction, supporting initial trajectory determination \cite{paschalis_-beam_2015}.
 
-The secondary beam of $^{25}$F enters the experimental area and is tracked and identified using a series of detectors placed along the beamline. The first two components, \textbf{MWPC0} and \textbf{MWPC1}, are multi-wire proportional chambers that provide precise position and angular information of the incoming ions with minimal material budget. This tracking is essential for reconstructing the reaction vertex within the extended target and for correlating the incoming ion with its downstream reaction products \cite{paschalis_-beam_2015}.
+The \textbf{LOS}, positioned directly downstream of the MWPC, serves as the start detector for time-of-flight measurements and provides fast timing and energy-loss signals for particle identification. With a thickness of 3 mm, LOS offers good timing resolution while preserving beam quality \cite{panin2024neutron}.
 
-Following these are the \textbf{TwinMUSIC} chambers, a dual-section ionization detector that measures the energy loss ($\Delta$E) of incoming particles to determine their nuclear charge (Z). This is especially important in purifying the cocktail beam and identifying the rare $^{25}$F ions on an event-by-event basis.
-
-Immediately downstream of TwinMUSIC is the \textbf{LOS} (Large-area Organic Scintillator), which functions as the start detector for time-of-flight (ToF) measurements and provides an additional layer of Z identification via fast plastic scintillation. It also contributes to triggering logic for reaction events \cite{panin2024neutron}.
-
-The final upstream detector before the target is \textbf{ROLU}, a collimating slit used to define the spatial beam profile and eliminate halo components. While not used for measurement directly, it is essential for ensuring clean beam passage into the reaction chamber.
+Immediately following LOS, a pair of \textbf{FOOTs}—silicon-strip detectors—measure the position and energy loss of incoming ions. These detectors enable fine angular resolution and contribute to charge (Z) identification, enhancing particle-by-particle beam tagging.
 
 
-\subsubsection{Target Region}
+\subsubsection{ALPIDE: High-Precision Pixel Tracking}
 
-The nuclear reaction takes place inside a 50 mm liquid hydrogen (LH$_2$) target, located at the center of the setup. This thick cryogenic target is ideal for maximizing reaction yields in low-intensity beams, especially for quasi-free scattering processes like (p,2p) in inverse kinematics. The outgoing protons and reaction residues emerge from the target into a nearly 4$\pi$ detection environment.
+Downstream of the first FOOT pair, the beam encounters the \textbf{ALPIDE} detector. Originally developed for the ALICE ITS upgrade at CERN, ALPIDE is a monolithic active pixel sensor (MAPS) built using the 180 nm CMOS imaging process. Its architecture allows for in-pixel amplification and digitization with very low power consumption (<40 mW/cm$^2$), high spatial resolution ($\sim$ 5 $\mu$m), and detection efficiencies exceeding 99\% \cite{mager_alpide_2016}.
 
-Surrounding the target is \textbf{CALIFA} (CALorimeter for In-Flight particles and $\gamma$-rays), a highly segmented electromagnetic calorimeter composed of CsI(Tl) crystals. CALIFA plays a dual role: it detects prompt $\gamma$-rays from de-exciting nuclei and captures recoil protons from the (p,2p) process. Its barrel geometry provides angular resolution suitable for identifying proton pairs and determining their opening angles, which are key to selecting quasi-free events. The energy resolution is approximately 5–6\% at 1 MeV, and the time resolution is sub-nanosecond, enabling precise event reconstruction \cite{cortina-gil_califa_2014}.
+ALPIDE's design includes a fast, continuously active front-end and in-matrix sparsification, which minimizes data volume by transmitting only hit pixel addresses. This makes it ideal for high-rate tracking applications like \gls{R3B}. Its placement directly before the target provides excellent vertex resolution when combined with upstream and downstream tracking data.
 
+\subsubsection{ROLU and Second FOOT Pair}
 
-\subsubsection{Fragment Tracking Before and After the Magnet}
+The \textbf{ROLU} acts as a beam collimation device, though not in the form of a physical absorber. Instead, it consists of four plastic scintillators arranged to define a square aperture, with the individual scintillators movable to adjust the effective beam window. The system is integrated into the trigger logic: if a particle traverses one of the scintillators, a reject signal is issued and the corresponding event is discarded. Only particles passing cleanly through the defined square aperture—without activating the scintillators—are accepted as valid events. In this way, ROLU effectively performs the role of a beam collimator by suppressing halo particles and defining the accepted beam profile, while relying purely on veto logic rather than material absorption.
 
-Charged reaction fragments are tracked using \textbf{FOOTs} (Fast Outgoing Object Trackers), which are double-sided silicon-strip detectors. The first pair of FOOTs (X and Y planes) is positioned directly downstream of the target, inside the CALIFA chamber, while the second pair is located just after CALIFA. These detectors provide position, angle, and energy-loss measurements, facilitating both trajectory reconstruction and Z identification of heavy residues such as $^{24}$O, $^{23}$O, and $^{22}$O \cite{panin2024neutron}.
+Immediately after ROLU is a second pair of FOOT detectors, which reinforces the pre-target tracking and ensures consistent charge and trajectory measurements across multiple stages.
 
+\subsubsection{Target and CALIFA}
 
-\subsubsection{Magnetic Analysis with GLAD}
+The nuclear reaction occurs in a 50 mm liquid hydrogen (LH$_2$) target, housed in a vacuum chamber and centrally located within the \textbf{CALIFA} (CALorimeter for In-Flight particles and $\gamma$-rays) detector. CALIFA is composed of CsI(Tl) crystals in a barrel geometry surrounding the target and is designed to detect both recoil protons and γ-rays emitted from excited nuclei. Its energy resolution ($\sim$5–6\% at 1 MeV) and high granularity make it suitable for reconstructing angular distributions and reaction dynamics \cite{cortina-gil_califa_2014}.
 
-After exiting CALIFA and the second FOOT pair, the charged fragments enter the field of \textbf{GLAD} (GSI Large Acceptance Dipole), a superconducting dipole magnet with a large aperture and strong bending power (up to 1.6 T·m). In this experiment, GLAD is operated at approximately 58\% of its maximum field, providing sufficient magnetic rigidity to separate fragments by momentum and charge state. This is critical for enabling invariant-mass spectroscopy when combined with tracking and time-of-flight measurements.
+\subsubsection{Post-Target Fragment Tracking}
 
-
-\subsubsection{Downstream Fragment Tracking and Identification}
-
-Charged fragments deflected by GLAD are further tracked by \textbf{MWPC3}, a large-area proportional chamber providing coarse but wide-angle position measurements. This is followed by two layers of scintillating fiber detectors, which deliver fine spatial resolution (~100 $\mu$m) for trajectory reconstruction and angular correlation. These tracking elements allow for precise determination of deflection angles, and thus of the total momentum vectors of the reaction products.
-
-At the far end of the fragment line is the \textbf{ToFD} (Time-of-Flight Detector), a large-area plastic scintillator wall composed of four vertical planes. ToFD measures both ToF and energy loss with high precision, achieving timing resolutions of approximately 14 ps per plane and $\Delta$E resolution better than 1\% for Z determination. This data, combined with magnetic rigidity and tracking information, enables full fragment identification in both charge and mass number \cite{heil_new_2022}.
-
-\subsubsection{Neutron Detection with NeuLAND}
-
-Neutral particles emitted in the reaction, primarily neutrons from unbound states of $^{24}$O and lighter oxygen isotopes, travel unaffected by GLAD’s magnetic field and continue on a straight path to the \textbf{NeuLAND} (New Large-Area Neutron Detector). NeuLAND is composed of 3000 plastic scintillator bars arranged in 30 double planes, positioned approximately 15–35 meters downstream of the target at zero degrees. It is optimized for detecting fast neutrons (100–1000 MeV) with high efficiency (93–95\% for single neutrons) and excellent spatial (~1.5 cm) and timing (<150 ps) resolution \cite{boretzky_neuland_2021}.
-
-NeuLAND enables measurement of multi-neutron events (e.g., $^{23}$O + n, $^{22}$O + 2n) via time-of-flight and interaction point reconstruction, and is critical for the invariant-mass reconstruction of the unbound final states populated in the (p,2p) reaction. This functionality allows the extraction of excitation energies and decay modes of exotic oxygen isotopes with unprecedented precision.
+Two additional FOOT pairs are placed downstream of the target: one immediately following the exit window and the other just beyond CALIFA. These silicon-strip detectors provide post-reaction trajectory and Z information for the heavy charged fragments, supporting full momentum reconstruction and enabling vertex association when correlated with upstream tracks.
 
 
-\subsection{Particular Role of RPC}
+\subsubsection{Magnetic Spectrometer: GLAD}
 
-\cite{xarepe_resistive_2023}
+The deflection of charged fragments is performed by \textbf{GLAD} (GSI Large Acceptance Dipole), a superconducting dipole magnet optimized for large-aperture, high-rigidity measurements. Operated at reduced current for this experiment, GLAD enables separation of oxygen isotopes by their magnetic rigidity, facilitating identification of the reaction residues such as $^{22}O$, $^{23}O$ and $^{24}O$.
+
+\subsubsection{Downstream Branches}
+
+After GLAD, the detection branches diverge to accommodate different particle species:
+
+\begin{itemize}
+	\item Neutron Arm: Neutrons produced in the decay of unbound states travel undeviated to \textbf{NeuLAND}, a high-efficiency detector composed of 3000 plastic scintillator bars. NeuLAND offers sub-150 ps time resolution and spatial precision of $\sim$1.5 cm, allowing for accurate time-of-flight measurements and invariant-mass reconstruction in multi-neutron events. It plays a central role in identifying final states like $^{23}O + n$ and $^{22}O + 2n$.
+	\item Fragment Arm: Charged fragments deflected by GLAD are tracked by four \textbf{scintillating fiber detectors}, designated Fiber 30, 31, 32 and 33. These detectors provide fine spatial resolution along the beam axis. Final time-of-flight and charge identification are performed by the \textbf{ToFD}, a four-plane plastic scintillator wall with timing precision better than 20 ps and Z resolution sufficient for fragment identification \cite{heil_new_2022}.
+	\item Third Arm: A \textbf{Resistive Plate Chamber (RPC)} is also located in a separate branch downstream of GLAD. While its role in this experiment is limited to specific measurements, the RPC provides complementary timing and tracking information. A more detailed discussion of the RPC system will follow in the next chapter.
+\end{itemize}
 
 
 \subsection{Main DAQ}
 
-Each detector is connected to the main \gls{DAQ}, everytime they have a trigger, they send a trigger request to the main \gls{DAQ}. If multiple detectors send a trigger request, it is considered an event to register and the main \gls{DAQ} sends an accept signal, allowing every detector to save that signal.
+The R3B experimental setup is integrated through a centralized \gls{DAQ} system designed to operate in a trigger-coincidence mode across all detectors. Each detector is independently connected to the main \gls{DAQ} and continuously monitors for signals corresponding to particle interactions. Upon detecting such a signal, a detector issues a trigger request to the central \gls{DAQ}. When multiple detectors generate simultaneous or time-correlated trigger requests—indicative of a valid physical event—the system recognizes this as a global trigger. In response, the \gls{DAQ} issues a trigger accept signal, prompting all participating detectors to read out and store the corresponding event data.
 
-All of these saved signals of each detector are then saved in a common \textit{lmd} file containing every detectors data separated by event.
-
-There's a synchronization signal with around 10 Hz to make sure every detector is synchronized.
+The digitized data from each detector are then merged into a single event stream and recorded in a common LMD (List Mode Data) file format. This format preserves the temporal correlation by organizing the information from all subsystems into event-by-event structures. To ensure consistency and temporal alignment across the detector systems, a synchronization signal is distributed at a frequency of approximately 10 Hz. This reference signal provides regular timing markers, allowing for verification and correction of potential timing drifts or misalignments during offline analysis.
 
 
 \section{Personal Contribution to the Experiment}

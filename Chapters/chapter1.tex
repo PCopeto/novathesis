@@ -78,14 +78,16 @@ Haxel, Jensen, and Suess \cite{haxel_magic_nodate} provided a succinct explanati
 
 The classic shell model was originally built based on stable and near-$\beta$-stable nuclei. However, advances in experimental techniques have allowed the study of exotic nuclei—nuclei far from stability, with unusual neutron-to-proton ratios.
 
-In these systems \cite{otsuka_evolution_2020}:
+%In these systems \cite{otsuka_evolution_2020}:
 
-\begin{itemize}
-	\item Traditional magic numbers can weaken or even disappear .
-	\item New magic numbers (e.g., $N=16$, $N=34$) can emerge.
-	\item Nuclear deformations become more common, especially near the so-called "island of inversion" (around $N=20$).
-	\item Phenomena like neutron halos emerge.
-\end{itemize}
+%\begin{itemize}
+%	\item Traditional magic numbers can weaken or even disappear .
+%	\item New magic numbers (e.g., $N=16$, $N=34$) can emerge.
+%	\item Nuclear deformations become more common, especially near the so-called "island of inversion" (around $N=20$).
+%	\item Phenomena like neutron halos emerge.
+%\end{itemize}
+
+In these systems traditional magic numbers can weaken or even disappear, new magic numbers (e.g., $N=16$, $N=34$) can emerge, nuclear deformations become more common, especially near the so-called "island of inversion" (around $N=20$) and phenomena like neutron halos emerge \cite{otsuka_evolution_2020}.
 
 This phenomena has led to the concept of shell evolution, where the shell structure depends on the balance between the nuclear force components (central, spin-orbit, and tensor interactions) and changes with proton-neutron ratios.
 
@@ -93,47 +95,23 @@ This phenomena has led to the concept of shell evolution, where the shell struct
 
 In summary, the liquid-drop model offered a macroscopic view of nuclear behavior, while the shell model introduced microscopic structure and quantization effects that explain nuclear stability at magic numbers. The discovery of exotic nuclei has highlighted that the shell structure itself is dynamic and evolves under extreme conditions, demonstrating the richness and complexity of nuclear structure beyond the stable valley.
 
-The quest for obtaining a model that will adequately describe the nucleus in all areas of stability, as well as at the extremes of nuclear existence has been motivating the last 60 years of nuclear physics and has led to the designing of new laboratories, such as the the FAIR facility.
+The quest for obtaining a model that will adequately describe the nucleus in all areas of stability, as well as at the extremes of nuclear existence has been motivating the last 60 years of nuclear physics and has led to the designing of new laboratories, such as the FAIR facility.
 
-%\subsection{Liquid-drop Model}
-%
-%Proposed by Bethe and Bacher in 1936 \cite{bethe_nuclear_1936}.
-%
-%In this model, nucleons were strongly interacting particles that make up the nucleus, which in turn was considered to be like
-%a drop of charged incompressible nuclear liquid.
 
-%However, research showed that certain combinations of protons and neutrons formed more tightly bound nuclei than other \cite{mayer_shell_1968,haxel_magic_nodate}.
-%
-%\subsection{Shell Model}
-%
-%\subsubsection{Magic Numbers}
-%
-%Nuclei can be thought of as having shell structure analogous to the atomic energy levels observed for electrons.
-%
-%\subsubsection{Exotic Nuclei}
-%
-%As nuclei became more neutron rich, the nuclear surface becomes more diffuse and the nuclear density decreases.
-%\begin{enumerate}
-%	\item Nuclear Halos;
-%	\item Shell Quenching.
-%\end{enumerate}
-%
-%
 \section{The FAIR Facility}
 
 %A new international accelerator known as \gls{FAIR} has been under construction at the GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} laboratory in Darmstadt, Germany. FAIR will provide worldwide unique accelerator and experimental facilities allowing for a large variety of unprecedented forefront research in hadron, nuclear, atomic and plasma physics and applied sciences \cite{123_FAIR}. The FAIR accelerator complex will deliver beams of anti-protons and ions with unprecedented intensity and quality. The ion beams available will range from hydrogen to uranium with a velocity up to 99\% of the speed of light, making the FAIR facility one of a kink worldwide \cite{rosner_future_2007}.
 
-\begin{figure}
+The \gls{FAIR}, currently under construction as an expansion to the existing GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} in Darmstadt, Germany, represents one of the most ambitious research infrastructures worldwide for exploring the structure of matter and the evolution of the universe. \gls{FAIR} will provide intense, high-quality beams of protons, antiprotons, and ions—ranging from hydrogen to uranium—enabling unique access to a wide range of unexplored regimes in hadronic, nuclear, atomic, and plasma physics, as well as interdisciplinary and applied sciences.
+
+The \gls{FAIR} accelerator complex, seen in Figure \ref{fig:FAIRlayout}, is centered around the superconducting synchrotron SIS100 \cite{sis100_fair_2020}, which, with its 100 Tm magnetic rigidity and 1100 m circumference, will serve as the backbone for beam delivery. The accelerator system is complemented by specialized storage rings and the Super-FRS fragment separator \cite{superfrs_status_2008}, facilitating the production and manipulation of both stable and exotic radioactive beams with intensities and purities that exceed those of existing facilities by several orders of magnitude.
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{FAIR}
 	\caption{Layout of GSI-FAIR with the existing and planned beamlines shown in blue and red, respectively. The experimental sites are marked in black (figure: GSI Darmstadt). \textcopyright ~Copyright: GSI/FAIR.}
 	\label{fig:FAIRlayout}
 \end{figure}
-
-
-The \gls{FAIR}, currently under construction as an expansion to the existing GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} in Darmstadt, Germany, represents one of the most ambitious research infrastructures worldwide for exploring the structure of matter and the evolution of the universe. \gls{FAIR} will provide intense, high-quality beams of protons, antiprotons, and ions—ranging from hydrogen to uranium—enabling unique access to a wide range of unexplored regimes in hadronic, nuclear, atomic, and plasma physics, as well as interdisciplinary and applied sciences.
-
-The \gls{FAIR} accelerator complex, seen in Figure \ref{fig:FAIRlayout}, is centered around the superconducting synchrotron SIS100 \cite{sis100_fair_2020}, which, with its 100 Tm magnetic rigidity and 1100 m circumference, will serve as the backbone for beam delivery. The accelerator system is complemented by specialized storage rings and the Super-FRS fragment separator \cite{superfrs_status_2008}, facilitating the production and manipulation of both stable and exotic radioactive beams with intensities and purities that exceed those of existing facilities by several orders of magnitude.
 
 \gls{FAIR}'s scientific program is structured around four foundational experimental pillars \cite{123_FAIR,rosner_future_2007,stoecker_fair_2011}:
 
@@ -171,3 +149,5 @@ Moved NeuLAND bar for calibration. Flashed RPC and inserted the gas mixture. Fou
 Developed a script to monitor voltage and current in the RPC resistive plates.
 
 Updated a script to power cycle RPC and reboot DAQ and Acquisition.
+
+Developed MDF functions for PID in RPC.
