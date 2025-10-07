@@ -15,20 +15,20 @@
   "The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them."
 }{Sir William Lawrence Bragg}
 
-\section{Introduction}
+%\section{Introduction}
 
 Since the birth of Nuclear Physics, with the discovery of the atomic nucleus by Ernest Rutherford in 1911 \cite{rutherford_lxxix_1911}, this area has proved to be a fascinating field for scientific research displaying a rich variety of quantum phenomena.
-Many features of the nucleons in the nucleus exhibited are similar to the structure and behavior of atomic electrons in the atom. Similar descriptions for energy levels and shells, spins and angular momentum have emerged.
+Many of the exhibited features of the nucleons in the nucleus are similar to the structure and behavior of atomic electrons in the atom. Similar descriptions for energy levels and shells, spins and angular momentum have emerged.
 
 But there are some differences:
 \begin{enumerate}
 	\item The dominating force inside the nucleus is the strong force rather than the electromagnetic one.
-	\item Since the strong force is short range and attractive, the potential in which the nucleons exist is created by all the other nucleons in contrast to the force between the atomic electrons and the spatially separated positive charge of the nucleus.
+	\item Since the strong force is short range and attractive, the potential in which the nucleons exist is created by all the other nucleons in contrast to the force between the atomic electrons and the spatially separated positive charge of the nucleus \cite{Taylor2011}.
 \end{enumerate}
 
-Two fundamental models—the liquid-drop model and the shell model—represent key milestones in the development of understanding the nucleus. Their reconciliation explains many nuclear phenomena, particularly the emergence of magic numbers and the behavior of exotic nuclei.
+Two fundamental models—the liquid-drop model \cite{bethe_nuclear_1936} and the shell model \cite{mayer_1948}—represent key milestones in the development of understanding the nucleus. Their reconciliation explains many nuclear phenomena, particularly the emergence of magic numbers and the behavior of exotic nuclei.
 
-\subsection{The Liquid-drop Model}
+\section{The Liquid-drop Model}
 
 The liquid-drop model, first formulated comprehensively by Weizsäcker \cite{Weizsacker_1935} and discussed in detail by Bethe and Bacher in 1936 \cite{bethe_nuclear_1936}, treats the nucleus analogously to a charged droplet of incompressible fluid. This model emphasizes collective properties of the nucleus, such as binding energy, surface tension, and Coulomb repulsion among protons.
 
@@ -36,17 +36,17 @@ The semi-empirical mass formula (also called the Bethe-Weizsäcker formula) capt
 
 \[B(A,Z) = a_VA - a_SA^{2/3} - a_C\frac{Z(Z-1)}{A^{1/3}} - a_A\frac{(N-Z)^2}{A}\pm \delta(N,Z)\]
 
-where each term accounts for volume, surface, Coulomb, asymmetry, and pairing effects respectively.
+where $A$ is the mass number (total number of nucleons), $Z$ is the proton number, and $N = A - Z$ is the neutron number. Each term accounts for volume ($a_V$), surface ($a_S$), Coulomb ($a_C$), asymmetry ($a_A$), and pairing ($\delta$) effects respectively.
 
 While successful at explaining global nuclear properties—such as the approximate binding energy per nucleon—it could not account for observed anomalies in nuclear stability, such as nuclei at specific nucleon numbers (2, 8, 20, 28, 50, 82, 126) exhibiting enhanced stability: the magic numbers.
 
-\subsection{The Shell Model}
+\section{The Shell Model}
 
 The limitations of the liquid-drop model led to the proposal of the nuclear shell model, developed independently by Maria Goeppert Mayer \cite{mayer_1948} and by Haxel, Jensen, and Suess \cite{haxel_magic_nodate} in the late 1940s. Mayer and Jensen later collaborated on a comprehensive treatment of the model \cite{MayerandJensen_1955}, and were jointly awarded the Nobel Prize in Physics in 1963 for their contributions. Their work, expanding on the early suggestions of Elsasser \cite{elsasser_sur_1933}, showed that nucleons move in quantized energy levels within a mean potential well created by all other nucleons—analogous to electrons in atomic orbitals.
 
 Initially, it was thought that a simple three-dimensional harmonic oscillator potential could describe the structure. However, it was soon realized that including a strong spin-orbit coupling term, where the nucleon's spin couples to its orbital motion, was critical to reproduce the magic numbers observed experimentally \cite{mayer_shell_1968}.
 
-In particular, spin-orbit splitting lifts the degeneracy of orbital states, energetically favoring high-angular-momentum states (e.g., $j=l+1/2$), thus producing large energy gaps at specific nucleon numbers—those corresponding to the magic numbers. This effect is illustrated in Figure \ref{fig:magic_numbers}, which shows the rearrangement of single-particle levels and the resulting magic numbers emerging from spin-orbit coupling.
+In particular, spin-orbit splitting lifts the degeneracy of orbital states, energetically favoring high-angular-momentum states (e.g., $j=l+1/2$), thus producing large energy gaps at specific nucleon numbers—those corresponding to the magic numbers. This effect is illustrated in Figure \ref{fig:magic_numbers}, which shows the rearrangement of single-particle levels and the resulting magic numbers emerging from spin-orbit coupling \cite{krane_introductory_1988}.
 
 The modified energy level filling, based on this strong spin-orbit interaction, led to a successful explanation for the pronounced nuclear stability at nucleon numbers:
 
@@ -57,24 +57,17 @@ for both protons and neutrons separately \cite{mayer_shell_1968}.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{krane_single_orbit}
-	\caption{Single-particle shell model level scheme illustrating the origin of nuclear magic numbers after incorporating spin-orbit coupling. The diagram shows the energy splitting of nuclear orbitals due to spin-orbit interaction, leading to the observed magic numbers (circled) corresponding to closed shells at nucleon numbers 2, 8, 20, 28, 50, 82, 126, and 184. The levels are labeled with their orbital and total angular momentum quantum numbers \emph{nlj}, and the associated degeneracy (2\emph{j}+1) is indicated on the right. Reprinted figure from Ref. \cite{krane_introductory_1988}}
+	\caption[Shell model level scheme with spin-orbit splitting]{Single-particle shell model level scheme illustrating the origin of nuclear magic numbers after incorporating spin-orbit coupling. The diagram shows the energy splitting of nuclear orbitals due to spin-orbit interaction, leading to the observed magic numbers (circled) corresponding to closed shells at nucleon numbers 2, 8, 20, 28, 50, 82, 126, and 184. The levels are labeled with their orbital and total angular momentum quantum numbers \emph{nlj}, and the associated degeneracy (2\emph{j}+1) is indicated on the right. Reprinted figure from Ref. \cite{krane_introductory_1988}}
 	\label{fig:magic_numbers}
 \end{figure}
 
 
-\subsubsection{Magic Numbers and Shell Closures}
+\subsection{Magic Numbers and Shell Closures}
 
-In the shell model:
-
-\begin{itemize}
-	\item A closed shell means that all available states at a given energy are filled.
-	\item Nuclei with both proton and neutron numbers equal to magic numbers (so-called doubly magic nuclei, e.g., $^{16}$O, $^{208}$Pb) exhibit especially high binding energies, spherical shapes, and relatively low excitation spectra.
-\end{itemize}
-
-Haxel, Jensen, and Suess \cite{haxel_magic_nodate} provided a succinct explanation showing how a strong spin-orbit coupling splits the energy levels such that filling up the states naturally reproduces the magic numbers.
+In the shell model, a closed shell means that all available states at a given energy are filled. Nuclei with both proton and neutron numbers equal to magic numbers (so-called doubly magic nuclei, e.g., $^{16}$O, $^{208}$Pb) exhibit especially high binding energies, spherical shapes, and relatively low excitation spectra. Haxel, Jensen, and Suess \cite{haxel_magic_nodate} provided a succinct explanation showing how a strong spin-orbit coupling splits the energy levels such that filling up the states naturally reproduces the magic numbers.
 
 
-\subsubsection{Extension to Exotic Nuclei}
+\subsection{Extension to Exotic Nuclei}
 
 The classic shell model was originally built based on stable and near-$\beta$-stable nuclei. However, advances in experimental techniques have allowed the study of exotic nuclei—nuclei far from stability, with unusual neutron-to-proton ratios.
 
@@ -90,9 +83,8 @@ The classic shell model was originally built based on stable and near-$\beta$-st
 In these systems traditional magic numbers can weaken or even disappear, new magic numbers (e.g., $N=16$, $N=34$) can emerge, nuclear deformations become more common, especially near the so-called "island of inversion" (around $N=20$) and phenomena like neutron halos emerge \cite{otsuka_evolution_2020}.
 
 This phenomena has led to the concept of shell evolution, where the shell structure depends on the balance between the nuclear force components (central, spin-orbit, and tensor interactions) and changes with proton-neutron ratios.
-
-\subsection{Conclusion}
-
+\\
+\\
 In summary, the liquid-drop model offered a macroscopic view of nuclear behavior, while the shell model introduced microscopic structure and quantization effects that explain nuclear stability at magic numbers. The discovery of exotic nuclei has highlighted that the shell structure itself is dynamic and evolves under extreme conditions, demonstrating the richness and complexity of nuclear structure beyond the stable valley.
 
 The quest for obtaining a model that will adequately describe the nucleus in all areas of stability, as well as at the extremes of nuclear existence has been motivating the last 60 years of nuclear physics and has led to the designing of new laboratories, such as the FAIR facility.
@@ -102,14 +94,14 @@ The quest for obtaining a model that will adequately describe the nucleus in all
 
 %A new international accelerator known as \gls{FAIR} has been under construction at the GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} laboratory in Darmstadt, Germany. FAIR will provide worldwide unique accelerator and experimental facilities allowing for a large variety of unprecedented forefront research in hadron, nuclear, atomic and plasma physics and applied sciences \cite{123_FAIR}. The FAIR accelerator complex will deliver beams of anti-protons and ions with unprecedented intensity and quality. The ion beams available will range from hydrogen to uranium with a velocity up to 99\% of the speed of light, making the FAIR facility one of a kink worldwide \cite{rosner_future_2007}.
 
-The \gls{FAIR}, currently under construction as an expansion to the existing GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} in Darmstadt, Germany, represents one of the most ambitious research infrastructures worldwide for exploring the structure of matter and the evolution of the universe. \gls{FAIR} will provide intense, high-quality beams of protons, antiprotons, and ions—ranging from hydrogen to uranium—enabling unique access to a wide range of unexplored regimes in hadronic, nuclear, atomic, and plasma physics, as well as interdisciplinary and applied sciences.
+The \gls{FAIR}, currently under construction as an expansion to the existing GSI\footnote{GSI Helmholtzzentrum für Schwerionenforschung} in Darmstadt, Germany, represents one of the most ambitious research infrastructures worldwide for exploring the structure of matter and the evolution of the universe \cite{stoecker_fair_2011}. \gls{FAIR} will provide intense, high-quality beams of protons, antiprotons, and ions—ranging from hydrogen to uranium—enabling unique access to a wide range of unexplored regimes in hadronic, nuclear, atomic, and plasma physics, as well as interdisciplinary and applied sciences.
 
 The \gls{FAIR} accelerator complex, seen in Figure \ref{fig:FAIRlayout}, is centered around the superconducting synchrotron SIS100 \cite{sis100_fair_2020}, which, with its 100 Tm magnetic rigidity and 1100 m circumference, will serve as the backbone for beam delivery. The accelerator system is complemented by specialized storage rings and the Super-FRS fragment separator \cite{superfrs_status_2008}, facilitating the production and manipulation of both stable and exotic radioactive beams with intensities and purities that exceed those of existing facilities by several orders of magnitude.
 
-\begin{figure}[H]
+\begin{figure}[]
 	\centering
-	\includegraphics[width=0.75\linewidth]{FAIR}
-	\caption{Layout of GSI-FAIR with the existing and planned beamlines shown in blue and red, respectively. The experimental sites are marked in black (figure: GSI Darmstadt). \textcopyright ~Copyright: GSI/FAIR.}
+	\includegraphics[width=0.7\linewidth]{FAIR}
+	\caption[Layout of GSI-FAIR with existing and planned beamlines]{Layout of GSI-FAIR with the existing and planned beamlines shown in blue and red, respectively. The experimental sites are marked in black (figure: GSI Darmstadt). Reproduced from GSI-FAIR Website and Social Media Platforms. \textcopyright ~Copyright: GSI/FAIR.}
 	\label{fig:FAIRlayout}
 \end{figure}
 
@@ -141,13 +133,18 @@ The \gls{FAIR} accelerator complex, seen in Figure \ref{fig:FAIRlayout}, is cent
 \section{Author's Contribution and Thesis Overview}
 
 
-Simulations for the experiment.
+%Simulations for the experiment.
 
-RPC preparation:
-Moved NeuLAND bar for calibration. Flashed RPC and inserted the gas mixture. Found working point.
+%RPC preparation:
+%Moved NeuLAND bar for calibration. Flashed RPC and inserted the gas mixture. Found working point.
 
-Developed a script to monitor voltage and current in the RPC resistive plates.
+%Developed a script to monitor voltage and current in the RPC resistive plates.
 
-Updated a script to power cycle RPC and reboot DAQ and Acquisition.
+%Updated a script to power cycle RPC and reboot DAQ and Acquisition.
 
-Developed MDF functions for PID in RPC.
+%Developed MDF functions for PID in RPC.
+
+
+The work presented in this thesis represents the author’s direct contribution to both the simulation and analysis tasks within the framework of the \gls{R3B} collaboration, in the context of the G249 experiment. The author was responsible for developing and validating the multidimensional fitting (MDF) functions used to reconstruct physical quantities from detector observables. This involved designing the input variable set, training the models with simulated data, and evaluating their performance under realistic detector conditions. In addition, the author carried out dedicated simulations to estimate the particle distribution at the RPC, providing insight into the expected detector environment and potential additional physics channels relevant for G249.
+
+This thesis is organized as follows. Chapter~2 introduces the theoretical and experimental background necessary to place the work in context. Chapter~3 describes the accelerator system at GSI and the \gls{R3B} experimental setup and its detectors, and further introduces the G249 experiment, outlining its goals, context, and beam characteristics. Chapter~4 is dedicated to the RPC, discussing its operating principles, construction, and relevance within \gls{R3B}. Chapter~5 presents the simulation studies, including the development and validation of the MDF approach. Finally, Chapter~6 discusses the experimental results, with a focus on the performance of the RPC as well as presenting preliminary applications of the MDF method to real data.

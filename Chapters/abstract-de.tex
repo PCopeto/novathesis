@@ -8,34 +8,41 @@
 
 \typeout{NT FILE abstract-de.tex}%
 
-\textbf{Dies ist eine „Google Translate“-Übersetzung der englischen Version! Fixes und Korrekturen sind willkommen!}
 
-Unabhängig von der Sprache, in der die Dissertation verfasst ist, gibt es in der Regel mindestens zwei Abstracts: einen Abstract in der gleichen Sprache wie der Haupttext und einen Abstract in einer anderen Sprache.
+%Diese Arbeit präsentiert die Entwicklung, Simulation und experimentelle Anwendung von Rekonstruktionsmethoden zur Detektion leichter Fragmente mit einer Resistiven Plattenkammer (RPC) im Rahmen der R$^3$B-Kollaboration am GSI Darmstadt. Sie wurde im Kontext des Experiments G249 durchgeführt, das die Struktur des neutronenreichen Kerns $^{25}$F mittels Quasi-Freier Streuung untersucht.
 
-Die Reihenfolge der Abstracts variiert je nach Schule. Wenn Ihre Schule spezielle Vorschriften bezüglich der Reihenfolge der Abstracts hat, wird die Vorlage \gls{novathesis} (\LaTeX) diese respektieren. Andernfalls ist die Standardregel in der \gls{novathesis}-Vorlage, zuerst die Zusammenfassung in \emph{der gleichen Sprache wie der Haupttext} zu haben, und dann die Zusammenfassung in \emph{der anderen Sprache}. Wenn die Dissertation beispielsweise auf Portugiesisch verfasst ist, ist die Reihenfolge der Zusammenfassungen zuerst Portugiesisch und dann Englisch, gefolgt vom Haupttext auf Portugiesisch. Wenn die Dissertation in englischer Sprache verfasst ist, ist die Reihenfolge der Abstracts zuerst englisch und dann portugiesisch, gefolgt vom Haupttext in englischer Sprache.
-%
-Diese Reihenfolge kann jedoch angepasst werden, indem der Datei \verb+5_packages.tex+ eines der folgenden Elemente hinzugefügt wird.
+%Ein zentraler Bestandteil ist die Entwicklung multidimensionaler Fitfunktionen (MDF) im R3BRoot-Framework zur Rekonstruktion physikalischer Größen aus den Signalen der Detektoren. Simulierte Datensätze aus FOOT-Spurdetektoren, GLAD-Dipolmagnet und RPC wurden zum Training der MDF-Modelle verwendet. Die Validierung in Geant4-Simulationen zeigte hohe Vorhersagegenauigkeit mit Unsicherheiten bis $10^{-3}$.
 
-\begin{verbatim}
-    \ntsetup{abstractorder={<LANG_1>,...,<LANG_N>}}
-    \ntsetup{abstractorder={<MAIN_LANG>={<LANG_1>,...,<LANG_N>}}}
-\end{verbatim}
+%Gezielte Simulationen schätzten die Fragmentzusammensetzung an der RPC; Deuteronen, Tritonen und Alphateilchen dominierten. Diese Ergebnisse liefern Hinweise auf die Detektorleistung und das Potenzial für weitere Physikkanäle.
 
-Verwenden Sie zum Beispiel für ein auf Deutsch verfasstes Hauptdokument mit Zusammenfassungen auf Deutsch, Englisch und Italienisch (in dieser Reihenfolge):
-\begin{verbatim}
-    \ntsetup{abstractorder={de={de,en,it}}}
-\end{verbatim}
+%Die Leistung der RPC während der G249-Strahlzeit wurde bewertet: elektronische Zeitauflösung 38 ps, Effizienz nahe den Erwartungen und Identifikation problematischer Streifen. Erste Anwendungen der MDF auf experimentelle Daten zeigten vielversprechende Ergebnisse für p/Q, während A/Q noch durch laufende Kalibrierungen limitiert war.
 
-Inhaltlich sollten die Abstracts eine Seite nicht überschreiten und können folgende Fragen beantworten (unbedingt an die Gepflogenheiten Ihres Fachgebietes anpassen):
+%Insgesamt verdeutlicht die Arbeit das Potenzial der RPC, von einem reinen Protonen- und Timing-Detektor zu einem aktiven Fragmentrekonstruktionsdetektor zu werden, wodurch ihre Rolle in R$^3$B gestärkt und neue Einsatzmöglichkeiten an FAIR eröffnet werden.
 
-\begin{itemize}
-  \item Was ist das Problem?
-  \item Warum ist es interessant?
-  \item Was ist die Lösung?
-  \item Was folgt aus der Lösung?
-\end{itemize}
+
+Diese Arbeit präsentiert die Entwicklung, Simulation und experimentelle Anwendung von Rekonstruktionsmethoden zur Detektion leichter Fragmente mit einer Resistiven Plattenkammer (RPC) im Rahmen der R$^3$B-Kollaboration am GSI Darmstadt. Sie wurde im Kontext des Experiments G249 durchgeführt, das die Struktur des neutronenreichen Kerns $^{25}$F mittels Quasi-Freier Streuung untersucht.
+
+Ein zentraler Bestandteil ist die Entwicklung multidimensionaler Fitfunktionen (MDF) im R3BRoot-Framework zur Rekonstruktion physikalischer Größen aus den Detektorsignalen. Simulierte Datensätze aus FOOT, GLAD und RPC dienten zum Training der MDF-Modelle. Die Validierung in Geant4-Simulationen zeigte eine hohe Vorhersagegenauigkeit mit Unsicherheiten bis $10^{-3}$, was die Robustheit unter realistischen Bedingungen bestätigt.
+
+Weitere Simulationen bestimmten die Fragmentzusammensetzung an der RPC; Deuteronen, Tritonen und Alphateilchen dominierten.
+
+Auch die Leistung der RPC während der G249-Strahlzeit wurde bewertet. Wichtige Ergebnisse sind eine Zeitauflösung von 38 ps, eine Effizienz nahe den Erwartungen sowie die Identifikation problematischer Streifen. Erste Anwendungen der MDF-Methode auf experimentelle Daten zeigten gute Ergebnisse für p/Q, während A/Q noch durch die laufende Kalibrierung der RPC und weiterer Detektoren limitiert war.
+
+Insgesamt verdeutlicht die Arbeit das Potenzial der RPC, sich von einem reinen Protonen- und Timing-Detektor zu einem aktiven Fragmentrekonstruktionsdetektor zu entwickeln und ihre Rolle in R$^3$B und FAIR zu erweitern.
 
 % Palavras-chave do resumo em Alemão
-\begin{keywords}
-Schlüsselwort 1, Schlüsselwort 2, Schlüsselwort 3
-\end{keywords}
+%\begin{keywords}
+%Resistive Plattenkammer (RPC), Quasi-Freie Streuung (QFS), Multidimensionales Fitting (MDF), Exotische Kerne, R$^3$B-Kollaboration
+%\end{keywords}
+
+\keywords{
+	Resistive Plattenkammer (RPC) \and
+	Quasi-Freie Streuung (QFS) \and
+	Multidimensionales Fitting (MDF) \and
+	Exotische Kerne \and
+	R$^3$B-Kollaboration
+}
+\\
+\\
+Die in dieser Dissertation dargestellte Forschungsarbeit wurde im Einklang mit den im Ethikkodex der Universidade Nova de Lisboa festgelegten Normen durchgeführt. Die beschriebenen Arbeiten und das präsentierte Material stellen, mit den ausdrücklich gekennzeichneten Ausnahmen, eine originäre Eigenleistung des Autors dar.
+

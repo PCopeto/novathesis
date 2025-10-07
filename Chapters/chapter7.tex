@@ -6,20 +6,29 @@
 %% Chapter with lots of dummy text
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\typeout{NT FILE chapter5.tex}%
+\typeout{NT FILE chapter7.tex}%
 
-\chapter{Lorem Ipsum}
-\label{cha:lorem_ipsum}
+\chapter{Conclusion}
+\label{cha:conclusion}
 
-\lipsum[1-100]
-\lipsum[1-100]
-\lipsum[1-100]
-% \lipsum[1-100]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
-% \lipsum[1-700]
+%This thesis has presented the development, validation, and first applications of simulation-based reconstruction methods for the Resistive Plate Chamber (\gls{RPC}) in the framework of the \gls{R3B} collaboration at GSI Darmstadt. The work was carried out in the context of experiment G249, designed to study the structure of the neutron-rich nucleus $^{25}$F via the quasi-free scattering reaction $^{25}$F(p,2p)$^{24}$O.  
+
+%A central contribution of this thesis was the implementation of multidimensional fitting (\gls{MDF}) functions to reconstruct physical quantities from limited detector observables. Using simulated data, \gls{MDF} models were trained with input from the FOOT tracking detectors, GLAD, and the \gls{RPC}. Their validation in Geant4-based simulations demonstrated excellent predictive power, achieving uncertainties down to the order of $10^{-3}$. This confirmed that \gls{MDF} provides a robust and reliable reconstruction method under realistic detector resolutions.  
+
+%The \gls{RPC} performance during the G249 beam time was also assessed. An electronic time resolution of 38 ps was achieved, in line with expectations from previous experiments, though the efficiency was slightly reduced due to conservative operating conditions. Several problematic strips were identified, underscoring the importance of ongoing calibration efforts.  
+
+%Preliminary applications of the \gls{MDF} method to real experimental data showed promising results for the reconstruction of $p/Q$, consistent with simulations. In contrast, the extraction of $A/Q$ suffered from poor resolution and unphysical features, which can be traced to the incomplete calibration of the \gls{RPC} and associated detectors, particularly the time-of-flight determination. Simulation studies confirmed the sensitivity of \gls{MDF} performance to time resolution, reinforcing this interpretation. These findings highlight both the potential and the current limitations of \gls{MDF} when applied to experimental data.  
+
+%Looking forward, several avenues of improvement are evident. The completion of detector calibrations, especially for the \gls{RPC} and FOOTs, is expected to significantly enhance the performance of the \gls{MDF} functions, enabling reliable $A/Q$ reconstruction and robust particle identification. Further refinement of event and hit selection strategies will also help reduce ambiguities in multi-hit scenarios. Once these challenges are addressed, the \gls{RPC} could evolve beyond its traditional role as a timing detector, serving as an active fragment reconstruction device.  
+
+%In a broader perspective, this work illustrates how simulation-driven approaches can expand the capabilities of existing detectors within the \gls{R3B} setup. The methods developed here are not limited to the \gls{RPC} but could be adapted to other detectors and future experiments. At \gls{FAIR}, where higher beam energies and intensities will pose new challenges for detector systems, the ability of the \gls{RPC} to combine precise timing with fragment reconstruction could prove particularly valuable. The results of this thesis therefore provide a foundation for enhancing the role of the \gls{RPC} within \gls{R3B} and contribute to the long-term goal of exploring the structure of exotic nuclei at the limits of stability.  
+
+
+
+This thesis presented the development, validation, and first applications of reconstruction methods for the Resistive Plate Chamber (\gls{RPC}) within the \gls{R3B} collaboration at GSI Darmstadt, in the context of experiment G249 investigating the structure of $^{25}$F via the quasi-free scattering reaction $^{25}$F(p,2p)$^{24}$O.  
+
+A central contribution was the implementation of multidimensional fitting (\gls{MDF}) functions to reconstruct physical quantities from detector observables. Trained with input from the FOOT tracking detectors, GLAD, and the \gls{RPC}, the \gls{MDF} models were validated in Geant4-based simulations, achieving predictive uncertainties down to $10^{-3}$. This demonstrated the robustness of \gls{MDF} as a reconstruction method under realistic detector resolutions.  
+
+The \gls{RPC} performance during beam time was also assessed. An electronic time resolution of 38 ps was achieved, consistent with expectations, though efficiency was slightly reduced due to conservative operating conditions. Preliminary applications of \gls{MDF} to real data yielded promising results for $p/Q$, while $A/Q$ reconstruction was limited by incomplete calibrations, particularly in the time-of-flight. Simulations confirmed the sensitivity of \gls{MDF} performance to timing resolution, supporting this interpretation.  
+
+Future improvements will depend on refined detector calibrations and optimized event selection. With these, the \gls{RPC} could evolve beyond its traditional role as a timing detector to an active fragment reconstruction device. More broadly, this work highlights the potential of simulation-driven methods to extend the capabilities of existing detectors, an approach that will be especially relevant for future experiments at \gls{FAIR}.  

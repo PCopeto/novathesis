@@ -8,7 +8,7 @@
 
 \typeout{NT FILE chapter4.tex}%
 
-\chapter{RPC}
+\chapter{Resistive Plate Chambers}
 \label{cha:RPC}
 
 %\epigraph{
@@ -25,30 +25,30 @@
 
 \section{Introduction and Historical Context}
 
-Resistive Plate Chambers (RPCs) are gaseous ionization detectors introduced in the early 1980s as a cost-effective solution for large-area charged-particle detection with excellent time resolution. Their working principle relies on the formation of localized electron avalanches in a thin gas gap between two resistive electrodes, typically made of glass or bakelite, under a strong uniform electric field \cite{riegler_physics_2004}. When a charged particle traverses the gas volume, it ionizes the medium, creating primary electron-ion pairs. The applied electric field accelerates the liberated electrons, initiating an avalanche multiplication process that induces a fast signal on metallic readout strips placed outside the resistive electrodes.
+Resistive Plate Chambers (\gls{RPC}s) are gaseous ionization detectors introduced in the early 1980s by R. Santonico and R. Cardarelli \cite{santonico_development_1981} as a cost-effective solution for large-area charged-particle detection with excellent time resolution. Their working principle relies on the formation of localized electron avalanches in a thin gas gap between two resistive electrodes, typically made of glass or bakelite, under a strong uniform electric field \cite{riegler_physics_2004}. When a charged particle traverses the gas volume, it ionizes the medium, creating primary electron-ion pairs. The applied electric field accelerates the liberated electrons, initiating an avalanche multiplication process that induces a fast signal on metallic readout strips placed outside the resistive electrodes.
 
-The original single-gap RPC design offered sub-nanosecond timing capabilities and good detection efficiency at relatively low cost, making it widely adopted in high-energy physics experiments. Subsequent developments led to the introduction of Multi-Gap Resistive Plate Chambers (MRPCs), which consist of several narrow gas gaps arranged in parallel between resistive plates \cite{riegler_physics_2004}. This configuration enhances the detector’s timing precision by reducing statistical fluctuations in avalanche development and limiting the overall charge per avalanche, improving rate capability and stability. MRPCs have become the standard in modern time-of-flight (TOF) systems in nuclear and particle physics, delivering intrinsic time resolutions below 50 ps for minimum ionizing particles (MIPs) and efficiencies exceeding 98\% \cite{blanco_ship_2020}.
+The original single-gap \gls{RPC} design offered sub-nanosecond timing capabilities and good detection efficiency at relatively low cost, making it widely adopted in high-energy physics experiments. Subsequent developments led to the introduction of Multi-Gap Resistive Plate Chambers (MRPCs), which consist of several narrow gas gaps arranged in parallel between resistive plates \cite{riegler_physics_2004}. This configuration enhances the detector’s timing precision by reducing statistical fluctuations in avalanche development and limiting the overall charge per avalanche, improving rate capability and stability. MRPCs have become the standard in modern time-of-flight (TOF) systems in nuclear and particle physics, delivering intrinsic time resolutions below 50 ps for minimum ionizing particles (MIPs) and efficiencies exceeding 98\% \cite{blanco_ship_2020}.
 
-Due to their scalability, robustness, and excellent timing performance, RPCs and MRPCs are extensively employed in experiments at facilities such as CERN, GSI, and RHIC, particularly in large TOF walls and tracking systems. Their application in relativistic heavy-ion collisions, rare-isotope beam experiments, and cosmic-ray detectors demonstrates their versatility and importance in modern experimental physics.
+Due to their scalability, robustness, and excellent timing performance, \gls{RPC}s and MRPCs are extensively employed in experiments at facilities such as CERN, GSI, and RHIC, particularly in large TOF walls and tracking systems. Their application in relativistic heavy-ion collisions, rare-isotope beam experiments, and cosmic-ray detectors demonstrates their versatility and importance in modern experimental physics.
 
 \section{Detector Design, Construction, and Properties}
 
-The Resistive Plate Chamber (\gls{RPC}) implemented in the \gls{R3B} experimental setup at GSI is a large-area timing detector developed for precise identification of charged fragments in relativistic heavy-ion collisions \cite{blanco_ship_2020}. It is based on the Multi-Gap RPC (MRPC) concept, which significantly enhances timing performance through multiple narrow gas gaps that ensure stable avalanche development.
+The Resistive Plate Chamber (\gls{RPC}) implemented in the \gls{R3B} experimental setup at GSI is a large-area timing detector developed for precise identification of charged fragments in relativistic heavy-ion collisions \cite{blanco_ship_2020}. It is based on the Multi-Gap \gls{RPC} (MRPC) concept, which significantly enhances timing performance through multiple narrow gas gaps that ensure stable avalanche development.
 
-The detector comprises two identical modules, each hosting a six-gap glass stack, giving a total of twelve 0.3 mm-thick gas gaps per detection plane. These gaps are defined by fishing lines to guarantee uniform separation between the electrodes. The electrodes themselves consist of 1 mm-thick float glass coated with a resistive layer that provides uniform high-voltage distribution. Together, the modules form an active detection area of 1550 × 1250 mm$^2$ (1.94 m$^2$), making this RPC one of the largest deployed in nuclear physics experiments.
+The detector comprises two identical modules, each hosting a six-gap glass stack, giving a total of twelve 0.3 mm-thick gas gaps per detection plane. These gaps are defined by nylon mono-filaments to guarantee uniform separation between the electrodes. The electrodes themselves consist of 1 mm-thick float glass coated with a resistive layer that provides uniform high-voltage distribution. Together, the modules form an active detection area of 1550 × 1250 mm$^2$ (1.94 m$^2$).
 
-The readout system is composed of 41 copper strips, each 29 mm wide and 1600 mm long, arranged on a central PCB placed between the two modules. Each strip is read out on both ends, referred to as the left and right sides. This configuration enables reconstruction of the Y-position from the strip index and the X-position from the signal arrival time difference between both ends. Timing measurements are performed using front-end electronics based on NINO ASICs, which provide fast leading-edge discrimination and time-over-threshold (ToT) encoding. The digitization stage employs TRB boards equipped with multi-channel TDCs featuring sub-30 ps resolution, ensuring precise timing measurements even under high-rate conditions.
+The readout system is composed of 41 copper strips, each 29 mm wide and 1600 mm long, arranged on a central PCB placed between the two modules. Each strip is read out on both ends, referred to as the left and right sides. This configuration enables reconstruction of the Y-position from the strip index and the X-position from the signal arrival time difference between both ends. Timing measurements are performed using front-end electronics based on the TRB3 (TDC Readout Board) \cite{neiser_trb3_2013} system developed at GSI, which provide fast leading-edge discrimination and time-over-threshold (ToT) encoding. TRB3 boards are equipped with multi-channel TDCs featuring sub-30 ps resolution, ensuring precise timing measurements even under high-rate conditions.
 
-The detector operates in avalanche mode with a gas mixture of 98\% tetrafluoroethane (C$_2$H$_2$F$_4$) and 2\% sulfur hexafluoride (SF$_6$), maintained slightly below atmospheric pressure. The working voltage is approximately 3 kV per gap, resulting in a total applied potential of $\sim$18 kV per module. This configuration ensures efficient avalanche formation while suppressing streamer transitions and electrical breakdown.
+The detector operates in avalanche mode with a gas mixture of 98\% tetrafluoroethane (C$_2$H$_2$F$_4$) and 2\% sulfur hexafluoride (SF$_6$), maintained slightly below atmospheric pressure. The working voltage is approximately 8 kV per resistive plate, resulting in a total applied potential of $\sim$16 kV per module. This configuration ensures efficient avalanche formation while suppressing streamer transitions and electrical breakdown.
 
-Performance benchmarks obtained in previous tests and beam time campaigns confirm the excellent capabilities of this RPC design. The detector achieves a timing resolution of 50–80 ps for minimum ionizing particles in controlled conditions, and approximately 80–100 ps in realistic beam environments, where additional contributions from reference detectors and beam spread are included. The detection efficiency exceeds 95\% under beam conditions and can reach 98\% in optimized laboratory setups. Spatial resolution is governed by the 29 mm strip pitch in the vertical direction and the signal propagation velocity along the strip for the horizontal position, yielding sub-centimeter accuracy in X after calibration \cite{blanco_ship_2020, xarepe_resistive_2023}.
+Performance benchmarks obtained in previous tests and beam time campaigns confirm the excellent capabilities of this \gls{RPC} design. The detector achieves a timing resolution of 50–80 ps for minimum ionizing particles in controlled conditions, and approximately 80–100 ps in realistic beam environments, where additional contributions from reference detectors and beam spread are included. The detection efficiency exceeds 95\% under beam conditions and can reach 98\% in optimized laboratory setups. Spatial resolution is governed by the 29 mm strip pitch in the vertical direction and the signal propagation velocity along the strip for the horizontal position, yielding sub-centimeter accuracy in X after calibration \cite{blanco_ship_2020, xarepe_resistive_2023}.
 
 A schematic representation of the detector geometry and strip layout is shown in Figure \ref{fig:RPCScheme}.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{RPC Schematic}
-	\caption{Schematic representation of the top view of the RPC. Reprinted from \cite{blanco_ship_2020}.}
+	\caption[Top view of the RPC detector]{Schematic representation of the top view of the \gls{RPC}. Reprinted from \cite{blanco_ship_2020}.}
 	\label{fig:RPCScheme}
 \end{figure}
       
@@ -103,14 +103,14 @@ From this raw information, a hit can be reconstructed by extracting three key ph
 
 This digital processing chain—from raw timing and strip information to physically meaningful hit coordinates—is integrated into the \gls{R3B} data processing framework. It enables high-resolution tracking and time measurement, critical for associating \gls{RPC} hits with particle trajectories and for synchronization with the rest of the \gls{R3B} detector systems.
 
-\section{Performance in Previous Beam Time}
+\section{Performance in Test Beam Time prior to G249}
 
-The \gls{RPC} system underwent its first test during beam time at the \gls{R3B} setup and demonstrated excellent performance \cite{xarepe_resistive_2023}. The detector achieved an efficiency exceeding 95\%, with reliable synchronization with the rest of the \gls{R3B} detectors. The data acquisition was stable over the full two-week operation period, confirming the robustness of both the hardware and software components.
+The \gls{RPC} system underwent its first test during beam time at the \gls{R3B} setup and demonstrated excellent performance. As seen in Figure \ref{fig:RPCStripEff}, the detector achieved an efficiency exceeding 95\%, with reliable synchronization with the rest of the \gls{R3B} detectors. The data acquisition was stable over the full two-week operation period, confirming the robustness of both the hardware and software components \cite{xarepe_resistive_2023}.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{RPC Strip Efficiency}
-	\caption{Measured strip efficiency of the RPC during beam time.}
+	\includegraphics[width=0.7\linewidth]{RPC Strip Efficiency}
+	\caption[Measured strip efficiency of the RPC]{Measured strip efficiency of the \gls{RPC} detector during the test beam time. Figure adapted from a presentation by M. Xarepe (personal communication, 2025).}
 	\label{fig:RPCStripEff}
 \end{figure}
 
@@ -128,38 +128,38 @@ The preparation of the \gls{RPC} prior to beam time involves several carefully c
 \begin{enumerate}
 	\item Drying Phase: Before filling with the working gas mixture, the \gls{RPC} is flushed for several days with SF$_6$ to remove residual moisture. As a more cost-effective alternative, nitrogen was used for this purpose; however, care must be taken to avoid over-pressurization, which could damage the delicate glass structure.
 	\item Leak Testing: Prior to introducing the working gas mixture, the system is tested for leaks. This is done by filling the gas lines while keeping the mass flow controllers closed and monitoring for pressure drops after closing the gas bottles. During this phase, a minor leak was detected. To localize it, various segments of the gas line were isolated and tested independently. These checks did not reveal any leakage in the external tubing, suggesting that the source of the leak was likely located within the \gls{RPC} chamber itself, or at one of the gas inlet or outlet ports. Despite this issue, the leak was sufficiently small that it did not affect the detector’s performance during beam time and did not require immediate intervention.
-	\item Gas Insertion and Calibration: Once leak tightness is confirmed, the 98\% C$_2$H$_2$F$_4$ / 2\% SF$_6$ gas mixture is introduced. To determine the optimal operating voltage, the detector is calibrated using cosmic ray coincidence measurements. For this purpose, a vertical NeuLAND bar is placed on each side of the \gls{RPC}. Coincidences allow for the fine adjustment of the high voltage supply to identify the working point that maximizes timing resolution and detection efficiency. An example of these calibration results is presented in Figure \ref{fig:RPC_WorkingPoint}, which illustrates the dependence of efficiency and signal characteristics on the applied high voltage.
+	\item Gas Insertion and Calibration: Once leak tightness is confirmed, the 98\%~C$_2$H$_2$F$_4$~/~2\%~SF$_6$ gas mixture is introduced. To determine the optimal operating voltage, the detector is calibrated using cosmic ray coincidence measurements. For this purpose, a scintillator NeuLAND bar is placed vertically on each side of the \gls{RPC}. Coincidences allow for the fine adjustment of the high voltage supply to identify the working point that maximizes timing resolution and detection efficiency. An example of these calibration results is presented in Figure \ref{fig:RPC_WorkingPointCalibration}, which illustrates the dependence of efficiency and signal characteristics on the applied high voltage.
 \end{enumerate}
 
 
 
 The entire preparation process takes approximately two weeks, after which the detector is ready for integration into the experimental campaign.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{RPC_WorkingPointCalibration}
-	\caption{Calibration of the RPC working point using cosmic ray data. The top-left panel shows the distribution of events as a function of the mean position on the scintillators for different applied voltages. The top-right panel presents the corresponding efficiency curves as a function of position for four high-voltage settings (7500, 7750, 8000, and 8250 V). The bottom-left panel shows the time-over-threshold (ToT) distributions for the same voltages, which are used as a quality criterion for hit selection. The bottom-right panel summarizes the overall efficiency as a function of the applied voltage, including results from previous beam campaigns for comparison.}
+	\caption[Calibration of the RPC working point with cosmic rays]{Calibration of the \gls{RPC} working point using cosmic ray data. The top-left panel shows the distribution of events as a function of the mean position on the scintillators for different applied voltages. The top-right panel presents the corresponding efficiency curves as a function of position for four high-voltage settings (7500, 7750, 8000, and 8250 V). The bottom-left panel shows the time-over-threshold (ToT) distributions for the same voltages, which are used as a quality criterion for hit selection. The bottom-right panel summarizes the overall efficiency as a function of the applied voltage, including results from previous beam campaigns for comparison.}
 	\label{fig:RPC_WorkingPointCalibration}
 \end{figure}
 
 \section{Contributions to Detector Operation and Monitoring}
 
-As part of the preparatory and operational phases of the experiment, several tasks related to the control and monitoring of the \gls{RPC} system were developed or improved. These contributions focused on increasing system reliability, enabling remote intervention, and enhancing real-time observability during beam time.
+As part of the preparatory and operational phases of the experiment, several tasks related to the control and monitoring of the \gls{RPC} system were developed or improved. These contributions focused on increasing system reliability, enabling remote intervention, and enhancing real-time observability during the beam time.
 
 \subsection{Monitoring Infrastructure for RPC Voltage and Current}
 
-To ensure the stable and safe operation of the \gls{RPC}, a custom monitoring script was developed to continuously track the voltage and current supplied to the detector’s resistive plates. This script interfaces with the high-voltage power supply and records the measured parameters at regular intervals. The collected data are automatically transmitted to a Grafana-based visualization dashboard, providing real-time insights into the detector’s electrical behavior. This tool proved essential for diagnosing fluctuations, identifying abnormal conditions during beam time, and maintaining long-term performance stability.
+To ensure the stable and safe operation of the \gls{RPC}, a custom monitoring script was developed to continuously track the voltage and current supplied to the detector’s resistive plates. This script interfaces with the high-voltage power supply and records the measured parameters at regular intervals. The collected data is automatically transmitted to a Grafana-based visualization dashboard, providing real-time insights into the detector’s electrical behavior. This tool proved essential for diagnosing fluctuations, identifying abnormal conditions during beam time, and maintaining long-term performance stability.
 These monitoring plots, generated during beam time, are shown in Figure \ref{fig:RPCGrafana}, where the stability of the applied voltage and the corresponding current drawn by the resistive plates can be visualized over time.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{RPCGrafana}
-	\caption{Example of live Grafana dashboard showing voltage and current monitoring of the RPC during beam operation.}
+	\caption[Grafana dashboard for RPC monitoring]{Example of live Grafana dashboard showing voltage and current monitoring of the \gls{RPC} during beam operation.}
 	\label{fig:RPCGrafana}
 \end{figure}
 
 \subsection{Remote Control and Recovery Tools}
 
-In addition to monitoring, improvements were made to the \gls{RPC} control interface by updating and correcting a script used for remote power cycling of the detector. This script also allows for the automated restart of the DAQ and acquisition systems, facilitating rapid recovery in the event of software or hardware issues. These functionalities were used during beam time to reinitialize the \gls{RPC} without requiring direct physical access to the electronics rack, minimizing downtime and ensuring uninterrupted data collection.
+In addition to monitoring, improvements were made to the \gls{RPC} control interface by updating and correcting a script used for remote power cycling of the detector. This script also allows for the automated restart of the \gls{DAQ} and acquisition systems, facilitating rapid recovery in the event of software or hardware issues. These functionalities were used during beam time to reinitialize the \gls{RPC} without requiring direct physical access to the electronics rack, minimizing downtime and ensuring uninterrupted data collection.
 
 These tools contributed directly to the detector’s robust operation and were successfully integrated into the experimental workflow.

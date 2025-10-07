@@ -15,7 +15,7 @@
 \makeatother
 
 
-\chapter{Experiment}
+\chapter{Experimental Campaign G249 - $^{25}F$ Structure from QFS}
 \label{cha:experiment}
 
 \epigraph{
@@ -36,7 +36,7 @@ Ultimately, the goal of this experiment is to provide a more detailed understand
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{NeutronDripLine}
-	\caption{Visualization of the neutron drip line extension from oxygen to fluorine. The extended neutron-rich limit for fluorine isotopes illustrates how additional protons influence nuclear binding near the drip line. Figure adapted from the IAEA Live Chart of Nuclides \cite{IAEA_NuclideChart}.}
+	\caption[Extension of the neutron drip line from oxygen to fluorine]{Visualization of the neutron drip line extension from oxygen, which is bound only up to $^{24}$O, to fluorine, which remains bound up to $^{31}$F. The extended neutron-rich limit for fluorine isotopes illustrates how additional protons influence nuclear binding near the drip line. Figure adapted from the IAEA Live Chart of Nuclides \cite{IAEA_NuclideChart}.}
 	\label{fig:NeutronDripLine}
 \end{figure}
 
@@ -44,95 +44,76 @@ Ultimately, the goal of this experiment is to provide a more detailed understand
 \section{The GSI Accelerator System}
 %Annex \ref{ann:gsi_facility}
 
-The previously described experiment will take place at the GSI Helmholtzzentrum für Schwerionenforschung in Darmstadt, Germany. GSI’s accelerator complex, seen in Figure \ref{fig:GSI}, provides the infrastructure required to produce and deliver rare isotope beams, such as $^{25}$F, for inverse kinematics reactions. The \gls{R3B} setup, located in Cave C downstream of the FRS, enables complete kinematic reconstruction, making it well-suited for the spectroscopic investigation of exotic nuclei. The following sections outline the accelerator chain that delivers these beams—from ion production through the UNILAC and SIS18 to the FRS and the experimental area.
+The previously described experiment will take place at the GSI Helmholtzzentrum für Schwerionenforschung in Darmstadt, Germany. GSI’s accelerator complex, shown in Figure \ref{fig:GSI}, provides the infrastructure required to produce and deliver rare isotope beams, such as $^{25}$F, for inverse kinematics reactions. The \gls{R3B} setup, located in Cave C downstream of the FRS, enables complete kinematic reconstruction, making it well-suited for the spectroscopic investigation of exotic nuclei. The following sections outline the accelerator chain that delivers these beams—from ion production through the UNILAC and SIS18 to the FRS and the experimental area.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{GSI}
-	\caption{Schematic layout of the GSI Helmholtzzentrum accelerator facility. The diagram shows the major components including the ion sources, the UNILAC linear accelerator, the SIS18 synchrotron, the Fragment Separator (FRS), and the associated experimental halls \cite{gsiAcceleratorFacility}.}
+	\caption[Layout of the GSI accelerator facility]{Schematic layout of the GSI Helmholtzzentrum accelerator facility. The diagram shows the major components including the ion sources, the UNILAC linear accelerator, the SIS18 synchrotron, the Fragment Separator (FRS), and the associated experimental halls \cite{gsiAcceleratorFacility}.}
 	\label{fig:GSI}
 \end{figure}
 
 
-\subsection{From Source to Experimental Cave}
+%\subsection{From Source to Experimental Cave}
 
-\subsubsection{Ion Production}
+\subsection{Ion Beam Production}
 
 The accelerator cycle begins with the production of ions in specialized ion sources. Depending on the experimental requirements, different types of sources are used, including electron cyclotron resonance (ECR) sources and Penning ion sources \cite{hollinger_status_2008}. These generate high charge state ions by stripping electrons from atoms in a plasma environment. The produced ions are pre-accelerated and then injected into the linear accelerator for further acceleration.
 
 
-\subsubsection{The UNILAC}
+\subsection{The UNILAC}
 
 The Universal Linear Accelerator (UNILAC) \cite{vormann_high_2023} serves as the primary injector for the GSI accelerator chain. It accelerates ions to energies of several MeV/u before their injection into the synchrotron. Structurally, the UNILAC consists of several stages: a radio-frequency quadrupole (RFQ), an interdigital H-mode drift tube linac (IH-DTL), and a transfer line to the synchrotron SIS18 \cite{barth_high_2022}. Over the years, substantial upgrades have been implemented to accommodate high-intensity beams and improve the beam quality for heavy ion acceleration . The layout of the UNILAC and its role as the front-end of the accelerator chain is depicted in Figure \ref{fig:UNILAC}.
 
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{UNILAC}
-	\caption{Detailed schematic of the UNILAC accelerator. The figure highlights the beamline structure from ion sources through the High Current Injector (HSI), Radio-Frequency Quadrupole (RFQ), Interdigital H-mode Drift Tube Linacs (IH-DTL), gas stripper section, Alvarez Drift Tube Linac (DTL), and the transfer line to SIS18. Beam diagnostic and stripping sections are also labeled \cite{barth_high_2022}.}
+	\caption[Detailed schematic of the UNILAC accelerator]{Detailed schematic of the UNILAC accelerator. The figure highlights the beamline structure from ion sources through the High Current Injector (HSI), Radio-Frequency Quadrupole (RFQ), Interdigital H-mode Drift Tube Linacs (IH-DTL), gas stripper section, Alvarez Drift Tube Linac (DTL), and the transfer line to SIS18. Beam diagnostic and stripping sections are also labeled \cite{barth_high_2022}.}
 	\label{fig:UNILAC}
 \end{figure}
 
 
-\subsubsection{The SIS18}
+\subsection{The SIS18 synchrotron}
 
-Following pre-acceleration by the UNILAC, ion beams are injected into the SIS18 synchrotron \cite{singh2014tune}, where they are further accelerated to relativistic energies. The SIS18 is a fast-cycling synchrotron with a magnetic rigidity of up to 18 Tm, capable of accelerating ions to several hundred MeV/u. It incorporates sophisticated beam manipulation techniques including bunch compression and multiturn injection to optimize performance and beam delivery. Figure \ref{fig:SIS18} illustrates the SIS18 layout and its specifications. The synchrotron serves both as a terminal accelerator for in-house experiments and as an injector for future FAIR components.
+Following pre-acceleration by the UNILAC, ion beams are injected into the SIS18 synchrotron \cite{singh2014tune}, where they are further accelerated to relativistic energies. The SIS18 is a fast-cycling synchrotron with a magnetic rigidity of up to 18 Tm, capable of accelerating ions to several hundred MeV/u. It incorporates sophisticated beam manipulation techniques including bunch compression and multiturn injection to optimize performance and beam delivery. Figure \ref{fig:SIS18} illustrates the SIS18 layout and its specifications. The synchrotron serves both as a terminal accelerator for in-house experiments and as an injector for future \gls{FAIR} components.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{SIS18}
-	\caption{Plan view of the SIS18 heavy-ion synchrotron, illustrating its 12 identical lattice sections, dipole and quadrupole magnet configurations, RF acceleration cavities, and positions of beam diagnostic systems \cite{gsiSIS18Sections}.}
+	\caption[Plan view of the SIS18 heavy-ion synchrotron]{Plan view of the SIS18 heavy-ion synchrotron, illustrating its 12 identical lattice sections, dipole and quadrupole magnet configurations, RF acceleration cavities, and positions of beam diagnostic systems \cite{gsiSIS18Sections}.}
 	\label{fig:SIS18}
 \end{figure}
 
-\subsubsection{The Fragment Separator (FRS)}
+\subsection{The Fragment Separator (FRS)}
 
-High-energy ions exiting the SIS18 are directed to the \gls{FRS} \cite{geissel_experiments_2008}, a magnetic spectrometer designed for in-flight separation of rare isotopes. The FRS exploits differences in magnetic rigidity and energy loss to isolate specific nuclear species from a cocktail beam. It comprises four dipole magnets forming a two-stage separation system and includes focal planes for tracking, time-of-flight, and energy-loss measurements . As shown in Figure \ref{fig:FRS}, the FRS facilitates beam transport from SIS18 to various experimental areas, enabling studies of exotic nuclei and reaction mechanisms.
+High-energy ions exiting the SIS18 are directed to the \gls{FRS} \cite{geissel_experiments_2008}, a magnetic spectrometer designed for in-flight separation of rare isotopes. The \gls{FRS} exploits differences in magnetic rigidity and energy loss to isolate specific nuclear species from a cocktail beam. It comprises four dipole magnets forming a two-stage separation system and includes focal planes for tracking, time-of-flight, and energy-loss measurements . As shown in Figure \ref{fig:FRS}, the \gls{FRS} facilitates beam transport from SIS18 to various experimental areas, enabling studies of exotic nuclei and reaction mechanisms.
 
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{FRS}
-	\caption{Schematic of the FRS system showing its dipole magnet sections, dispersive and achromatic focal planes (F1–F8), and the separation of rare isotope beams. The figure also shows the branching to dedicated experimental areas, including the Direct Branch, Ring Branch (ESR), and the experimental caves \cite{gsiWebHomelt}.}
+	\caption[Schematic of the FRS system and beam branches]{Schematic of the \gls{FRS} system showing its dipole magnet sections, dispersive and achromatic focal planes (S1–S8), and the separation of rare isotope beams. The figure also shows the branching to dedicated experimental areas, including the Direct Branch, Ring Branch (ESR), and the experimental caves \cite{gsiWebHomelt}.}
 	\label{fig:FRS}
 \end{figure}
 
 
-\subsubsection{Experimental Caves}
+\subsection{Experimental Caves}
 
-Following separation in the \gls{FRS}, ion beams are directed toward a suite of experimental stations, commonly referred to as experimental caves. These caves are equipped for diverse research programs ranging from nuclear structure and astrophysics to plasma physics and medical applications. One of the principal experimental areas is Cave C, located directly downstream of the FRS. This cave is the one that hosts the \gls{R3B} setup.
+Following separation in the \gls{FRS}, ion beams are directed toward a suite of experimental stations, commonly referred to as experimental caves. These caves are equipped for diverse research programs ranging from nuclear structure and astrophysics to plasma physics and medical applications. One of the principal experimental areas is Cave C, located directly downstream of the \gls{FRS}. This cave is the one that hosts the \gls{R3B} setup.
 
 Cave C serves as a prototype environment for the future NUSTAR experiments at \gls{FAIR}. Specifically, the \gls{R3B} instrumentation and experimental approach implemented at GSI are being used to develop and validate detector technologies and methodologies for the NUSTAR Cave under construction at \gls{FAIR}. This strategic continuity ensures a seamless transition of experimental capabilities and scientific objectives from the current GSI facility to the \gls{FAIR} complex.
 
-The overall layout of the GSI accelerator chain and its future integration with FAIR, including the locations of Cave C and the planned NUSTAR cave, is illustrated in Figure \ref{fig:GSI_FAIR_R3B}.
+The overall layout of the GSI accelerator chain and its future integration with \gls{FAIR}, including the locations of Cave C and the planned NUSTAR cave, is illustrated in Figure \ref{fig:GSI_FAIR_R3B}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{FAIR_R3B}
-	\caption{Layout of GSI-FAIR with Cave C highlighted, where the prototype of the future NUSTAR R$^3$B setup stands and where the present experiment took place.}
+	\caption[Layout of GSI-FAIR with Cave C highlighted]{Layout of GSI-FAIR with Cave C highlighted, where the prototype of the future NUSTAR R$^3$B setup stands and where the experiment considered in this thesis took place.}
 	\label{fig:GSI_FAIR_R3B}
 \end{figure}
 
 
-\subsubsection{Summary}
+%\subsubsection{Summary}
 
 The GSI accelerator system exemplifies a complex yet highly coordinated infrastructure, progressing from ion production through successive acceleration stages and culminating in precision experiments. The integration of the UNILAC, SIS18, and \gls{FRS} ensures the delivery of high-intensity, high-quality ion beams, establishing GSI as a cornerstone of heavy ion research.
-
-
-
-\subsection{Beam used in Experiment}
-
-In the proposed experiment \cite{panin2024neutron}, a $^{40}$Ar primary beam with an energy of 700 MeV/u is employed to produce a secondary beam containing the $^{25}$F isotope of interest. The primary beam impinges on a beryllium target located at the \gls{FRS}, inducing nuclear fragmentation reactions. This process generates a cocktail beam consisting of various isotopes, including $^{25}$F, which is then selected and guided towards the experimental setup in Cave C.
-
-The \gls{FRS} is used to separate and purify the secondary beam, ensuring a sufficient intensity of $^{25}$F for the subsequent experiment. As seen in Figure \ref{fig:CocktailBeam}, LISE++ simulations, using the EPAX3.1a production model, predict an intensity of approximately 30 ions per second (pps) of $^{25}$F on the secondary target \cite{panin2024neutron}. The total intensity of the secondary cocktail beam in Cave C is expected to be below 700 pps, with a purity of around 5\% for $^{25}$F \cite{panin2024neutron}. The relatively low total intensity allows for data acquisition without significant downscaling of triggers and minimizes dead time.
-
-In Cave C, the $^{25}$F secondary beam interacts with a liquid hydrogen (LH2) target, which serves as the reaction target for the one-proton knockout reaction $^{25}$F(p,2p)$^{24}$O. The LH2 target is positioned in the center of the CALIFA calorimeter, enabling the detection of outgoing protons from the reaction. The use of a 150 mm thick LH2 cell was initially planned but, due to problems in the liquefaction phase, the cell was replaced for a 50 mm one, reducing the reaction yield. 
-
-%The use of a 150 mm thick LH2 cell maximizes the reaction yield, compensating for the low intensity of the $^{25}$F beam.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.75\linewidth]{CocktailBeam}
-	\caption{Expected secondary cocktail beam of $^{25}$F in Cave C as obtained by LISE++ calculations. The numbers under the names of isotopes indicate calculated rates per second. Reprinted figure from Ref. \cite{panin2024neutron}.}
-	\label{fig:CocktailBeam}
-\end{figure}
 
 
 \section{R$^3$B Setup}
@@ -170,7 +151,7 @@ The \gls{R3B} (Reactions with Relativistic Radioactive Beams) setup at GSI is de
 	
 	\begin{figure}
 		\includegraphics[width=\linewidth]{ExperimentalSetupSketch}
-		\caption{Sketch of the experimental setup at R$^3$B.}
+		\caption[Experimental setup at R$^3$B]{Sketch of the experimental setup at \gls{R3B}.}
 		\label{fig:ExperimentalSetupSketch}
 	\end{figure}
 	
@@ -207,58 +188,77 @@ The \gls{R3B} (Reactions with Relativistic Radioactive Beams) setup at GSI is de
 
 
 
-\subsection{Role of each detector}
+%\subsection{Role of each detector}
 
-\subsubsection{Beam Tracking and Initial Identification}
+\subsection{Beam Tracking and Initial Identification}
 
-The experiment begins with a multi-wire proportional chamber (\textbf{MWPC}) placed at the entrance of Cave C. This detector provides coarse spatial information on the incoming secondary beam with minimal material interaction, supporting initial trajectory determination \cite{paschalis_-beam_2015}.
+At the end of the \gls{FRS}, the experimental setup begins with a multi-wire proportional chamber (\textbf{MWPC}) placed at the entrance of Cave C. This detector provides coarse spatial information on the incoming secondary beam with minimal material interaction, supporting initial trajectory determination \cite{paschalis_-beam_2015}.
 
-The \textbf{LOS}, positioned directly downstream of the MWPC, serves as the start detector for time-of-flight measurements and provides fast timing and energy-loss signals for particle identification. With a thickness of 3 mm, LOS offers good timing resolution while preserving beam quality \cite{panin2024neutron}.
+The \textbf{LOS} detector, positioned directly downstream of the MWPC, serves as the start detector for time-of-flight measurements and provides fast timing and energy-loss signals for particle identification. With a thickness of 3 mm, LOS offers good timing resolution while preserving beam quality \cite{panin2024neutron}.
 
 Immediately following LOS, a pair of \textbf{FOOTs}—silicon-strip detectors—measure the position and energy loss of incoming ions. These detectors enable fine angular resolution and contribute to charge (Z) identification, enhancing particle-by-particle beam tagging.
 
 
-\subsubsection{ALPIDE: High-Precision Pixel Tracking}
+\subsection{ALPIDE: High-Precision Pixel Tracking}
 
 Downstream of the first FOOT pair, the beam encounters the \textbf{ALPIDE} detector. Originally developed for the ALICE ITS upgrade at CERN, ALPIDE is a monolithic active pixel sensor (MAPS) built using the 180 nm CMOS imaging process. Its architecture allows for in-pixel amplification and digitization with very low power consumption (<40 mW/cm$^2$), high spatial resolution ($\sim$ 5 $\mu$m), and detection efficiencies exceeding 99\% \cite{mager_alpide_2016}.
 
 ALPIDE's design includes a fast, continuously active front-end and in-matrix sparsification, which minimizes data volume by transmitting only hit pixel addresses. This makes it ideal for high-rate tracking applications like \gls{R3B}. Its placement directly before the target provides excellent vertex resolution when combined with upstream and downstream tracking data.
 
-\subsubsection{ROLU and Second FOOT Pair}
+\subsection{ROLU and Second FOOT Pair}
 
 The \textbf{ROLU} acts as a beam collimation device, though not in the form of a physical absorber. Instead, it consists of four plastic scintillators arranged to define a square aperture, with the individual scintillators movable to adjust the effective beam window. The system is integrated into the trigger logic: if a particle traverses one of the scintillators, a reject signal is issued and the corresponding event is discarded. Only particles passing cleanly through the defined square aperture—without activating the scintillators—are accepted as valid events. In this way, ROLU effectively performs the role of a beam collimator by suppressing halo particles and defining the accepted beam profile, while relying purely on veto logic rather than material absorption.
 
 Immediately after ROLU is a second pair of FOOT detectors, which reinforces the pre-target tracking and ensures consistent charge and trajectory measurements across multiple stages.
 
-\subsubsection{Target and CALIFA}
+\subsection{Target and CALIFA}
 
-The nuclear reaction occurs in a 50 mm liquid hydrogen (LH$_2$) target, housed in a vacuum chamber and centrally located within the \textbf{CALIFA} (CALorimeter for In-Flight particles and $\gamma$-rays) detector. CALIFA is composed of CsI(Tl) crystals in a barrel geometry surrounding the target and is designed to detect both recoil protons and γ-rays emitted from excited nuclei. Its energy resolution ($\sim$5–6\% at 1 MeV) and high granularity make it suitable for reconstructing angular distributions and reaction dynamics \cite{cortina-gil_califa_2014}.
+The nuclear reaction occurs in a 50 mm liquid hydrogen (LH$_2$) target, housed in a vacuum chamber and centrally located within the \textbf{CALIFA} (CALorimeter for In-Flight particles and $\gamma$-rays) detector. CALIFA is composed of CsI(Tl) crystals in a barrel geometry surrounding the target and is designed to detect both recoil protons and $\gamma$-rays emitted from excited nuclei. Its energy resolution ($\sim$5–6\% at 1 MeV) and high granularity make it suitable for reconstructing angular distributions and reaction dynamics \cite{cortina-gil_califa_2014}.
 
-\subsubsection{Post-Target Fragment Tracking}
+\subsection{Post-Target Fragment Tracking}
 
 Two additional FOOT pairs are placed downstream of the target: one immediately following the exit window and the other just beyond CALIFA. These silicon-strip detectors provide post-reaction trajectory and Z information for the heavy charged fragments, supporting full momentum reconstruction and enabling vertex association when correlated with upstream tracks.
 
 
-\subsubsection{Magnetic Spectrometer: GLAD}
+\subsection{Magnetic Spectrometer: GLAD}
 
 The deflection of charged fragments is performed by \textbf{GLAD} (GSI Large Acceptance Dipole), a superconducting dipole magnet optimized for large-aperture, high-rigidity measurements. Operated at reduced current for this experiment, GLAD enables separation of oxygen isotopes by their magnetic rigidity, facilitating identification of the reaction residues such as $^{22}O$, $^{23}O$ and $^{24}O$.
 
-\subsubsection{Downstream Branches}
+\subsection{Downstream Branches}
 
-After GLAD, the detection branches diverge to accommodate different particle species:
+After GLAD, the detection branches diverge to accommodate different particle species according to their magnetic rigidity:
 
 \begin{itemize}
 	\item Neutron Arm: Neutrons produced in the decay of unbound states travel undeviated to \textbf{NeuLAND}, a high-efficiency detector composed of 3000 plastic scintillator bars. NeuLAND offers sub-150 ps time resolution and spatial precision of $\sim$1.5 cm, allowing for accurate time-of-flight measurements and invariant-mass reconstruction in multi-neutron events. It plays a central role in identifying final states like $^{23}O + n$ and $^{22}O + 2n$.
-	\item Fragment Arm: Charged fragments deflected by GLAD are tracked by four \textbf{scintillating fiber detectors}, designated Fiber 30, 31, 32 and 33. These detectors provide fine spatial resolution along the beam axis. Final time-of-flight and charge identification are performed by the \textbf{ToFD}, a four-plane plastic scintillator wall with timing precision better than 20 ps and Z resolution sufficient for fragment identification \cite{heil_new_2022}.
-	\item Third Arm: A \textbf{Resistive Plate Chamber (RPC)} is also located in a separate branch downstream of GLAD. While its role in this experiment is limited to specific measurements, the RPC provides complementary timing and tracking information. A more detailed discussion of the RPC system will follow in the next chapter.
+	\item Fragment Arm: Charged fragments deflected by GLAD are tracked by four \textbf{scintillating fiber detectors}, designated Fiber 30, 31, 32 and 33. These detectors provide fine spatial resolution along the beam axis. Final time-of-flight and charge identification are performed by the \textbf{\gls{ToFD}}, a four-plane plastic scintillator wall with timing precision better than 20 ps and Z resolution sufficient for fragment identification \cite{heil_new_2022}.
+	\item Low Magnetic Rigidity Fragment Arm: A \textbf{\gls{RPC}} is also located in a separate branch downstream of GLAD. While its role in this experiment is limited to specific measurements, the RPC provides complementary timing and tracking information. A more detailed discussion of the RPC system will follow in the next chapter.
 \end{itemize}
 
 
 \subsection{Main DAQ}
 
-The R3B experimental setup is integrated through a centralized \gls{DAQ} system designed to operate in a trigger-coincidence mode across all detectors. Each detector is independently connected to the main \gls{DAQ} and continuously monitors for signals corresponding to particle interactions. Upon detecting such a signal, a detector issues a trigger request to the central \gls{DAQ}. When multiple detectors generate simultaneous or time-correlated trigger requests—indicative of a valid physical event—the system recognizes this as a global trigger. In response, the \gls{DAQ} issues a trigger accept signal, prompting all participating detectors to read out and store the corresponding event data.
+The \gls{R3B} experimental setup is integrated through a centralized \gls{DAQ} system designed to operate in a trigger-coincidence mode across all detectors. Each detector is independently connected to the main \gls{DAQ} and continuously monitors for signals corresponding to particle interactions. Upon detecting such a signal, a detector issues a trigger request to the central \gls{DAQ}. When multiple detectors generate simultaneous or time-correlated trigger requests—indicative of a valid physical event—the system recognizes this as a global trigger. In response, the \gls{DAQ} issues a trigger accept signal, prompting all participating detectors to read out and store the corresponding event data.
 
 The digitized data from each detector are then merged into a single event stream and recorded in a common LMD (List Mode Data) file format. This format preserves the temporal correlation by organizing the information from all subsystems into event-by-event structures. To ensure consistency and temporal alignment across the detector systems, a synchronization signal is distributed at a frequency of approximately 10 Hz. This reference signal provides regular timing markers, allowing for verification and correction of potential timing drifts or misalignments during offline analysis.
 
+\section{Beam characteristics at G249}
+
+In the proposed experiment \cite{panin2024neutron}, a $^{40}$Ar primary beam with an energy of 700 MeV/u is employed to produce a secondary beam containing the $^{25}$F isotope of interest. The primary beam impinges on a beryllium target located at the \gls{FRS}, inducing nuclear fragmentation reactions. This process generates a cocktail beam consisting of various isotopes, including $^{25}$F at $\sim$630 MeV/u, which is then selected and guided towards the experimental setup in Cave C.
+
+The \gls{FRS} is used to separate and purify the secondary beam, ensuring a sufficient intensity of $^{25}$F for the subsequent experiment. As seen in Figure \ref{fig:CocktailBeam}, LISE++ simulations, using the EPAX3.1a production model, predict an intensity of approximately 30 ions per second (pps) of $^{25}$F on the secondary target \cite{panin2024neutron}. The total intensity of the secondary cocktail beam in Cave C is expected to be below 700 pps, with a purity of around 5\% for $^{25}$F \cite{panin2024neutron}. The relatively low total intensity allows for data acquisition without significant downscaling of triggers and minimizes dead time.
+
+In Cave C, the $^{25}$F secondary beam interacts with a liquid hydrogen (LH2) target, which serves as the reaction target for the one-proton knockout reaction $^{25}$F(p,2p)$^{24}$O. The LH2 target is positioned in the center of the CALIFA calorimeter, enabling the detection of outgoing protons from the reaction. The use of a 150 mm thick LH2 cell was initially planned but, due to problems in the liquefaction phase, the cell was replaced for a 50 mm one, reducing the reaction yield. 
+
+%The use of a 150 mm thick LH2 cell maximizes the reaction yield, compensating for the low intensity of the $^{25}$F beam.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{CocktailBeam}
+	\caption[Expected secondary cocktail beam of $^{25}$F in Cave C]{Expected secondary cocktail beam of $^{25}$F in Cave C as obtained by LISE++ calculations. The numbers under the names of isotopes indicate calculated rates per second. Reprinted figure from Ref. \cite{panin2024neutron}.}
+	\label{fig:CocktailBeam}
+\end{figure}
+
 
 \section{Personal Contribution to the Experiment}
+
+Beyond the simulation and analysis work presented later in this thesis (with simulations described in Chapter \ref{cha:simulations} and analysis in Chapters \ref{cha:simulations} and \ref{cha:results}), the author was actively involved in the experimental campaign. A key contribution was made to the preparation of the \gls{ToFD} detector, ensuring its readiness for the experiment. Furthermore, the author played an important role during the beam time itself, taking regular shifts dedicated to the monitoring and operation of the \gls{RPC}. This hands-on involvement provided valuable experience with the practical aspects of detector operation, complementing the simulation-based contributions presented in the subsequent chapters.
